@@ -145,7 +145,7 @@
 
       var faseActions = el("div", { className: "admin-fase__actions" });
       faseActions.innerHTML =
-        "<a class=\"btn btn-primary\" href=\"" + u("/admin/fase/pdf/?fase=" + encodeURIComponent(fase.id)) +
+        "<a class=\"btn btn-primary\" href=\"" + u("/admin/prototipi/periodizzazione/fase/?anno=2026-2027&fase=" + encodeURIComponent(fase.id)) +
         "\" target=\"_blank\" rel=\"noopener\">PDF settimana (AB+AC+CB)</a>";
       if (fase.id === "ipertrofia-accumulo") {
         faseActions.innerHTML +=

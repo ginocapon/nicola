@@ -2,28 +2,16 @@
 <html lang="it">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PDF scheda fase | Nicola</title>
-<meta name="robots" content="noindex, nofollow">
-<link rel="stylesheet" href="/css/styles.css?v=1">
-<link rel="stylesheet" href="/admin/css/admin-print.css?v=1">
-<script src="/js/site-base.js"></script>
-</head>
-<body class="admin-fase-pdf-page">
-<div class="admin-pdf-toolbar no-print">
-  <div class="admin-pdf-toolbar__inner wrap">
-    <p><strong>PDF settimana · AB + AC + CB · A4 orizzontale</strong></p>
-    <div class="btn-row">
-      <button type="button" class="btn btn-primary" id="fase-print-btn">Stampa / Salva PDF</button>
-      <a class="btn btn-ghost" href="/">← Ciclo</a>
-    </div>
-    <p class="admin-pdf-toolbar__tip"><small>Stampa in <strong>orizzontale</strong> · margini 8 mm · tutti e 3 i giorni su un foglio</small></p>
-  </div>
-</div>
-<main id="fase-pdf-root"><p style="text-align:center;padding:2rem">Caricamento scheda fase…</p></main>
+<meta http-equiv="refresh" content="0;url=/admin/prototipi/periodizzazione/fase/?fase=ipertrofia-accumulo">
+<title>Reindirizzamento…</title>
 <script>
-document.getElementById("fase-print-btn").addEventListener("click", function () { window.print(); });
+(function () {
+  var p = new URLSearchParams(location.search);
+  var fase = p.get("fase") || "ipertrofia-accumulo";
+  var base = (window.FQ_BASE || "");
+  location.replace(base + "/admin/prototipi/periodizzazione/fase/?anno=2026-2027&fase=" + encodeURIComponent(fase));
+})();
 </script>
-<script src="/admin/js/fase-pdf.js?v=1" defer></script>
-</body>
+</head>
+<body><p><a href="/admin/prototipi/periodizzazione/fase/?fase=ipertrofia-accumulo">Vai alla scheda fase</a></p></body>
 </html>
