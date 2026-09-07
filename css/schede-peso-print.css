@@ -280,9 +280,12 @@
     background: #fff8e8 !important;
   }
 
-  .scheda-a4__grid {
+  .scheda-a4__grid,
+  .scheda-a4__grid--abc {
     max-height: none;
-    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-auto-rows: auto;
   }
 
   .scheda-a4__quad {
@@ -304,13 +307,18 @@
   }
 }
 
-/* Nicola · 3 sedute AB AC CB — CB a tutta larghezza in basso */
+/* Nicola · 3 sedute AB AC CB — tutte in sequenza verticale (leggibilità) */
 .scheda-a4__grid--abc {
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: none;
+  grid-auto-rows: auto;
+  gap: 3mm;
+}
+.scheda-a4__grid--abc .scheda-a4__quad {
+  min-height: auto;
 }
 .scheda-a4__grid--abc .scheda-a4__quad--cb {
-  grid-column: 1 / -1;
+  grid-column: auto;
 }
 .scheda-a4__quad-sub {
   display: block;
