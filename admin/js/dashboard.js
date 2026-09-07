@@ -1,5 +1,5 @@
 /**
- * Dashboard ciclo Nicola — AB AC CB, parte alta ~70%
+ * Dashboard ciclo Nicola — estetica Michele, contenuto Nicola
  */
 (function () {
   "use strict";
@@ -90,7 +90,7 @@
     root.appendChild(el("p", {
       className: "ciclo-lead",
       text: formatDate(data.macrociclo.inizio) + " → " + formatDate(data.macrociclo.fine) +
-        " · 4 fasi × 13 settimane · parte alta ~70%"
+        " · 4 fasi × 13 settimane · Lun/Mer/Sab · parte alta ~70%"
     }));
 
     renderPrincipi(data, root);
@@ -102,12 +102,23 @@
       head.innerHTML =
         "<span class=\"admin-fase__num\">Fase " + (i + 1) + "</span>" +
         "<h3>" + fase.nome.replace(/^Fase \d+ · /, "") + "</h3>" +
-        "<p class=\"admin-fase__date\">" + formatDate(fase.inizio) + " – " + formatDate(fase.fine) +
+        "<p class=\"admin-fase__dates\">" + formatDate(fase.inizio) + " – " + formatDate(fase.fine) +
         " · " + fase.settimane + " settimane</p>";
       block.appendChild(head);
       block.appendChild(renderIr(fase));
 
-      var grid = el("div", { className: "admin-sessioni-grid" });
+      var faseActions = el("div", { className: "admin-fase__actions" });
+      faseActions.innerHTML =
+        "<a class=\"btn btn-primary\" href=\"" + u("/admin/fase/pdf/?fase=" + encodeURIComponent(fase.id)) +
+        "\" target=\"_blank\" rel=\"noopener\">PDF settimana (AB+AC+CB)</a>";
+      if (fase.id === "ipertrofia-accumulo") {
+        faseActions.innerHTML +=
+          " <a class=\"btn btn-ghost\" href=\"" + u("/admin/metodo-blocco1/") + "\">Metodo Blocco 1</a>" +
+          " <a class=\"btn btn-ghost\" href=\"" + u("/admin/metodo-blocco1/pdf/") + "\" target=\"_blank\" rel=\"noopener\">PDF metodo</a>";
+      }
+      block.appendChild(faseActions);
+
+      var grid = el("div", { className: "admin-sessioni-grid admin-sessioni-grid--3" });
       SESSIONI.forEach(function (key) {
         var s = fase.sessioni[key];
         if (!s) return;
@@ -117,19 +128,18 @@
         var meta = (s.giorno || "") + " · " + (s.quotaVolume || "") + " · " + s.esercizi.length + " esercizi";
         wrap.appendChild(el("p", { text: meta }));
         if (s.notaSeduta) wrap.appendChild(el("p", { className: "scheda-mini__nota", text: s.notaSeduta }));
-
         var actions = el("div", { className: "scheda-mini__actions" });
         actions.appendChild(el("a", {
           className: "btn btn-ghost",
           href: u("/admin/sessione/?ciclo=" + encodeURIComponent(fase.id) + "&sessione=" + key),
-          text: "Apri"
+          text: "Apri scheda"
         }));
         actions.appendChild(el("a", {
           className: "btn btn-primary",
           href: u("/admin/sessione/pdf/?ciclo=" + encodeURIComponent(fase.id) + "&sessione=" + key),
           target: "_blank",
           rel: "noopener",
-          text: "PDF"
+          text: "Scarica PDF"
         }));
         wrap.appendChild(actions);
         grid.appendChild(wrap);
@@ -150,8 +160,7 @@
       })
       .then(function (data) { renderDashboard(data, root); })
       .catch(function (err) {
-        root.innerHTML = "<p class=\"status error\">Errore: " + err.message +
-          ". Apri con un server locale (python -m http.server) se stai usando file://</p>";
+        root.innerHTML = "<p class=\"status error\">Errore: " + err.message + "</p>";
       });
   }
 

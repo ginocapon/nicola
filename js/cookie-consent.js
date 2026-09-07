@@ -1,20 +1,16 @@
 (function () {
   "use strict";
-  if (localStorage.getItem("nicola-consent-v1")) return;
-  var bar = document.createElement("div");
-  bar.className = "cookie-bar no-print";
-  bar.innerHTML =
-    '<p>Questo sito non usa analytics. Solo preferenze locali. ' +
-    '<a href="/trasparenza-ai/">Trasparenza AI</a></p>' +
-    '<button type="button" id="cookie-ok">OK</button>';
-  bar.style.cssText =
-    "position:fixed;bottom:0;left:0;right:0;z-index:999;" +
-    "background:#161616;border-top:1px solid rgba(201,120,58,0.4);" +
-    "padding:0.75rem 1rem;display:flex;flex-wrap:wrap;gap:0.75rem;" +
-    "align-items:center;justify-content:space-between;font-size:0.9rem;";
-  document.body.appendChild(bar);
-  document.getElementById("cookie-ok").addEventListener("click", function () {
-    localStorage.setItem("nicola-consent-v1", "1");
-    bar.remove();
-  });
+  function injectFooter() {
+    var footer = document.querySelector(".site-footer .wrap") || document.querySelector(".site-footer");
+    if (!footer || footer.querySelector(".ai-site-notice")) return;
+    var ai = document.createElement("p");
+    ai.className = "ai-site-notice";
+    ai.setAttribute("role", "note");
+    ai.innerHTML =
+      'Il ritratto in home è una <strong>foto originale</strong>. Le figure degli esercizi sono SVG tecnici. ' +
+      'Dettagli: <a href="' + (window.fqUrl ? window.fqUrl("/trasparenza-ai/") : "/trasparenza-ai/") + '">Trasparenza AI (AI Act UE)</a>.';
+    footer.appendChild(ai);
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", injectFooter);
+  else injectFooter();
 })();

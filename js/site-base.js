@@ -5,7 +5,6 @@
   var base = "";
   if (i > 0) base = p.slice(0, i);
   else if (/^\/nicola(\/|$)/i.test(p)) base = "/nicola";
-  else if (/^\/Nicola(\/|$)/.test(p)) base = "/Nicola";
   window.FQ_BASE = base;
   window.fqUrl = function (path) {
     if (!path) return base || "/";

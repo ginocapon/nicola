@@ -1,0 +1,138 @@
+{
+  "Panca piana bilanciere": {
+    "figura": "fig-press-piano",
+    "primario": "Petto",
+    "secondario": "Deltoidi anteriori, tricipiti",
+    "setup": "Scapole addotte, piedi a terra, presa leggermente più larga delle spalle.",
+    "movimento": "Discesa controllata 2–3 sec al petto, pausa breve, spinta senza rimbalzo.",
+    "errori": "Rimbalzo sul petto; stacco delle scapole; gomiti troppo aperti."
+  },
+  "Dip alle parallele": {
+    "figura": "fig-trazioni",
+    "primario": "Petto / tricipiti",
+    "secondario": "Deltoidi anteriori",
+    "setup": "Presa parallele, leggera inclinazione del busto per il petto.",
+    "movimento": "Discesa fino a ~90° gomiti, spinta completa. Elastico o gravità assistita se serve.",
+    "errori": "Spalle che salgono; ROM troppo corto per ego."
+  },
+  "Alzate laterali manubri": {
+    "figura": "fig-alzate",
+    "primario": "Deltoide laterale",
+    "secondario": "Trapezi superiori",
+    "setup": "Gomiti morbidi, polsi neutri, busto fermo.",
+    "movimento": "Alza fino all'altezza spalle, discesa lenta 3 sec.",
+    "errori": "Slancio col busto; oltre le spalle."
+  },
+  "Pushdown corda al cavo": {
+    "figura": "fig-curl-ez",
+    "primario": "Tricipiti",
+    "secondario": "—",
+    "setup": "Gomiti ai fianchi, cavo alto.",
+    "movimento": "Estensione completa, separa la corda in chiusura.",
+    "errori": "Gomiti che si spostano avanti; slancio col busto."
+  },
+  "Hack squat o pressa 45°": {
+    "figura": "fig-pressa",
+    "primario": "Quadricipiti",
+    "secondario": "Glutei",
+    "setup": "Mantenimento gambe — volume basso. ROM completo.",
+    "movimento": "2 serie controllate, RIR 3, niente cedimento.",
+    "errori": "Rimbalzo in basso; bacino che si stacca."
+  },
+  "Polpacci alla pressa": {
+    "figura": "fig-polpacci",
+    "primario": "Gastrocnemio",
+    "secondario": "Soleo",
+    "setup": "Mantenimento — polpacci già sviluppati.",
+    "movimento": "Pausa 2 sec in basso, salita completa.",
+    "errori": "ROM incompleto."
+  },
+  "Trazioni presa neutra": {
+    "figura": "fig-lat-neutro",
+    "primario": "Gran dorsale",
+    "secondario": "Bicipiti, romboidi",
+    "setup": "Presa neutra, scapole giù prima di tirare.",
+    "movimento": "Petto verso la sbarra, discesa controllata.",
+    "errori": "Slancio col busto; mezze rep."
+  },
+  "Rematore manubrio su panca": {
+    "figura": "fig-rematore",
+    "primario": "Dorsali / romboidi",
+    "secondario": "Bicipiti",
+    "setup": "Busto parallelo, mano appoggiata su panca.",
+    "movimento": "Tira il gomito verso il fianco, pausa in chiusura.",
+    "errori": "Rotazione del busto; tirare con il bicipite solo."
+  },
+  "Face pull al cavo": {
+    "figura": "fig-reverse-pec",
+    "primario": "Deltoide posteriore",
+    "secondario": "Romboidi",
+    "setup": "Cavo all'altezza del viso.",
+    "movimento": "Tira verso il viso ruotando leggermente i polsi.",
+    "errori": "Usare troppo il trapezio."
+  },
+  "Curl inclinato manubri": {
+    "figura": "fig-curl",
+    "primario": "Bicipiti (capo lungo)",
+    "secondario": "Brachiale",
+    "setup": "Panca 45°, braccia verticali.",
+    "movimento": "Curl senza slancio, discesa lenta.",
+    "errori": "Spostare i gomiti avanti."
+  },
+  "Rematore bilanciere prona": {
+    "figura": "fig-rematore",
+    "primario": "Dorsali",
+    "secondario": "Bicipiti, romboidi",
+    "setup": "Busto ~45°, schiena piatta.",
+    "movimento": "Tira verso l'ombelico, squeeze scapole 1 sec.",
+    "errori": "Cat back; slancio col busto."
+  },
+  "Panca inclinata manubri 25°": {
+    "figura": "fig-press-incl",
+    "primario": "Petto alto",
+    "secondario": "Deltoidi anteriori, tricipiti",
+    "setup": "Angolo basso 25° per enfatizzare petto alto.",
+    "movimento": "Discesa controllata, manubri che si avvicinano in alto.",
+    "errori": "Angolo troppo alto (diventa spalle)."
+  },
+  "Arnold press manubri seduto": {
+    "figura": "fig-lento",
+    "primario": "Deltoide",
+    "secondario": "Tricipiti",
+    "setup": "Seduto, schiena appoggiata, rotazione controllata.",
+    "movimento": "Skill spalle: rotazione in salita, carico moderato.",
+    "errori": "Inarcamento lombare; carico eccessivo."
+  },
+  "Curl martello manubri": {
+    "figura": "fig-curl-mart",
+    "primario": "Bicipiti / brachiale",
+    "secondario": "Avambraccio",
+    "setup": "Presa neutra, gomiti fermi.",
+    "movimento": "Alternato o simultaneo, no dondolio.",
+    "errori": "Slancio col busto."
+  },
+  "French press bilanciere EZ": {
+    "figura": "fig-curl-ez",
+    "primario": "Tricipiti",
+    "secondario": "—",
+    "setup": "Gomiti fermi, bilanciere EZ.",
+    "movimento": "Discesa lenta verso fronte o dietro testa.",
+    "errori": "Gomiti che si aprono."
+  },
+  "Leg curl seduto": {
+    "figura": "fig-legcurl",
+    "primario": "Femorali",
+    "secondario": "—",
+    "setup": "Mantenimento — volume minimo.",
+    "movimento": "Contrazione completa, pausa 1 sec.",
+    "errori": "Sollevare il bacino."
+  },
+  "Abductor machine": {
+    "figura": "fig-doktor",
+    "primario": "Glutei (medio)",
+    "secondario": "—",
+    "setup": "Glutei già sviluppati: 2 serie stimolo.",
+    "movimento": "Apertura controllata, squeeze in chiusura.",
+    "errori": "Slancio del busto."
+  }
+}

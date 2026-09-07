@@ -1,0 +1,156 @@
+{
+  "id": "ipertrofia-accumulo",
+  "codice": "BLOCCO 1",
+  "tipo": "IPERTROFIA • TECNICA",
+  "nome": "Fase 1 · Ipertrofia + tecnica",
+  "inizio": "2026-09-08",
+  "fine": "2026-12-07",
+  "settimane": 13,
+  "frequenza": "3 allenamenti/settimana · Lun · Mer · Sab",
+  "durataSeduta": "45 min (sett. 1–4) → 50 min (5–8) → 55 min (9–12) · sett. 13: 40 min",
+  "guida": "Fase di costruzione tecnica sul busto. Nicola ha già gambe, glutei e polpacci sviluppati: il volume inferiore resta minimo. Intensità ondulata RIR 3→1, scarico sett. 9, picco sett. 10–12, deload obbligatorio sett. 13. Non inseguire PR: serie pulite e progressione solo quando la forma regge.",
+  "schedaIntro": "3 allenamenti/settimana: Lun AB (35%) · Mer AC (25%) · Sab CB (40%). Priorità parte alta ~70%. Gambe in mantenimento. Pesi a penna. PDF anonimo.",
+  "periodizzazione": [
+    { "fase": "Adattamento", "settimane": "1-4", "rir": "3-2", "obiettivo": "Tecnica, ricerca carichi, 45 min" },
+    { "fase": "Accumulo", "settimane": "5-8", "rir": "2", "obiettivo": "Volume stabile, 50 min" },
+    { "fase": "Intensificazione", "settimane": "9-12", "rir": "1-2", "obiettivo": "Picco controllato, 55 min" },
+    { "fase": "Scarico parziale", "settimane": "9", "rir": "2", "obiettivo": "−25% volume" },
+    { "fase": "Deload", "settimane": "13", "rir": "4-5", "obiettivo": "−40% volume" }
+  ],
+  "regoleBlocco": {
+    "sett1_4": ["RIR 3-2", "Focus tecnica su panca, trazioni, rematore", "45 min per seduta", "Gambe: 2 serie ciascuna, RIR 3"],
+    "sett5_8": ["RIR 2", "Progressione +rep poi +kg sui *", "50 min per seduta"],
+    "sett9": ["Scarico −25% serie", "RIR 2, nessun cedimento"],
+    "sett10_12": ["RIR 1-2", "Ultima serie * a RIR 0-1 solo se forma perfetta", "55 min max"],
+    "sett13": ["Deload −40%", "RIR 4-5", "40 min"]
+  },
+  "guidaOperativa": {
+    "titolo": "Metodo Blocco 1 — Nicola",
+    "sintesi": "Stesso programma 13 settimane: cambiano RIR, volume (sett. 9 e 13) e kg. Tre schede AB, AC, CB. Parte alta ~70%, gambe mantenimento.",
+    "distribuzioneSettimanale": {
+      "schema": "Lun AB (35%) · Mer AC (25%) · Sab CB (40%)",
+      "consigliata": [
+        { "giorno": "Lunedì", "sessione": "AB", "tipo": "A+B", "focus": "Spinta petto/spalle + gambe brevi (35%)" },
+        { "giorno": "Martedì", "sessione": "Riposo", "tipo": "—", "focus": "Studio / recupero" },
+        { "giorno": "Mercoledì", "sessione": "AC", "tipo": "C", "focus": "Tirata + braccia — seduta corta (25%)" },
+        { "giorno": "Giovedì", "sessione": "Riposo", "tipo": "—", "focus": "Recupero" },
+        { "giorno": "Venerdì", "sessione": "Riposo", "tipo": "—", "focus": "Recupero" },
+        { "giorno": "Sabato", "sessione": "CB", "tipo": "C+A+B", "focus": "Schiena + petto + braccia (40%)" },
+        { "giorno": "Domenica", "sessione": "Riposo", "tipo": "—", "focus": "Recupero" }
+      ],
+      "alternative": ["Mar AB · Gio AC · Sab CB se il lunedì non è libero"],
+      "regoleRecupero": [
+        "Non fare AB e CB in giorni consecutivi",
+        "Mercoledì = seduta più breve (25% volume)",
+        "Sabato = seduta principale del weekend (40%)",
+        "Ordine fisso: AB → AC → CB"
+      ]
+    },
+    "regoleRirECedimento": {
+      "principio": "Essendo giovane e studente, il recupero conta più del cedimento. Nei primi 8 settimani niente cedimento sui fondamentali (*).",
+      "fondamentali": [
+        "Panca piana AB, Trazioni AC, Rematore bilanciere CB",
+        "Sett. 1–8: mai cedimento",
+        "Sett. 10–12: solo ultima serie * a RIR 0–1 se la forma è perfetta"
+      ],
+      "isolamento": ["Accessori: RIR 2, stop prima del cedimento tecnico"],
+      "tabellaCedimento": [
+        { "periodo": "Sett. 1–8", "fondamentali": "Mai cedimento", "isolamento": "RIR 2" },
+        { "periodo": "Sett. 9", "fondamentali": "Scarico", "isolamento": "RIR 2" },
+        { "periodo": "Sett. 10–12", "fondamentali": "Ultima serie * opzionale RIR 0–1", "isolamento": "RIR 1" },
+        { "periodo": "Sett. 13", "fondamentali": "RIR 4–5", "isolamento": "RIR 4–5" }
+      ]
+    },
+    "periodizzazioneIntensita": [
+      { "settimane": "1-4", "intensita": "RIR 3-2", "volume": "100%", "nota": "Tecnica · 45 min" },
+      { "settimane": "5-8", "intensita": "RIR 2", "volume": "100%", "nota": "50 min" },
+      { "settimane": "9", "intensita": "RIR 2", "volume": "−25%", "nota": "Scarico" },
+      { "settimane": "10-12", "intensita": "RIR 1-2", "volume": "100%", "nota": "55 min" },
+      { "settimane": "13", "intensita": "RIR 4-5", "volume": "−40%", "nota": "Deload" }
+    ],
+    "volumeSettimanaleFinale": [
+      { "gruppo": "Petto", "serie": 10, "note": "AB panca 4 + dip 3 · CB inclinata 3" },
+      { "gruppo": "Schiena", "serie": 10, "note": "AC trazioni 3 + rematore 3 · CB rematore 4" },
+      { "gruppo": "Spalle", "serie": 6, "note": "AB laterali 3 · CB Arnold 3" },
+      { "gruppo": "Bicipiti", "serie": 6, "note": "AC curl 3 · CB martello 3" },
+      { "gruppo": "Tricipiti", "serie": 5, "note": "AB pushdown 2 · dip · CB french 3" },
+      { "gruppo": "Quadricipiti", "serie": 2, "note": "AB pressa — mantenimento" },
+      { "gruppo": "Femorali", "serie": 2, "note": "CB leg curl — mantenimento" },
+      { "gruppo": "Glutei", "serie": 2, "note": "CB abductor — mantenimento" },
+      { "gruppo": "Polpacci", "serie": 2, "note": "AB pressa — mantenimento" }
+    ],
+    "volumePerSeduta": [
+      { "sessione": "AB", "parteAlta": "12 serie", "gambe": "4 serie", "quota": "35%" },
+      { "sessione": "AC", "parteAlta": "11 serie", "gambe": "0 serie", "quota": "25%" },
+      { "sessione": "CB", "parteAlta": "16 serie", "gambe": "4 serie", "quota": "40%" }
+    ],
+    "progressioneCarico": [
+      "Completa il tetto rep con RIR target per 2 sedute → +2,5 kg sui *",
+      "Isolamento: +1 rep, poi +2,5 kg",
+      "Sett. 9: stessi kg, meno serie",
+      "Sett. 13: −40% serie, kg all'80–85%"
+    ],
+    "checklistSeduta": [
+      "Riscaldamento 8 min (mobilità spalle + 2 serie leggere panca/lat)",
+      "Esercizi in ordine; accoppia accessori nel recupero dei *",
+      "Rispetta i tempi: Mer ≤40 min, Lun ~50 min, Sab ~55 min in fase 1",
+      "Annota kg, rep, RIR (PDF: Atleta vuoto)",
+      "Gambe: solo mantenimento, niente cedimento"
+    ]
+  },
+  "sessioni": {
+    "ab": {
+      "codice": "AB",
+      "nome": "Spinta + gambe brevi",
+      "accoppiamento": "A + B",
+      "notaSeduta": "Lunedì · 35% volume. Petto, spalle, tricipiti + 2 esercizi gambe mantenimento.",
+      "durataMinuti": { "obiettivo": 48, "tetto": 55 },
+      "esercizi": [
+        { "nome": "Panca piana bilanciere", "gruppo": "Petto", "serie": 4, "ripetizioni": "8-10", "tempo": "3-1-X-1", "recupero": "150 sec", "progressione": true, "rir": "3→2", "figura": "fig-press-piano", "progressionePrincipale": true, "note": "Fondamentale *. Scapole addotte, discesa 2–3 sec. Filma le prime serie.", "peso": "—" },
+        { "nome": "Dip alle parallele", "gruppo": "Petto / tricipiti", "serie": 3, "ripetizioni": "6-10", "tempo": "2-1-2-1", "recupero": "120 sec", "progressione": false, "rir": "2", "figura": "fig-trazioni", "progressionePrincipale": false, "note": "Skill. Elastico se serve.", "peso": "—" },
+        { "nome": "Alzate laterali manubri", "gruppo": "Deltoide laterale", "serie": 3, "ripetizioni": "12-15", "tempo": "2-1-3-1", "recupero": "60 sec", "progressione": false, "rir": "2", "figura": "fig-alzate", "progressionePrincipale": false, "note": "Deltoide laterale prioritario.", "peso": "—" },
+        { "nome": "Pushdown corda al cavo", "gruppo": "Tricipiti", "serie": 2, "ripetizioni": "12-15", "tempo": "2-1-2-1", "recupero": "60 sec", "progressione": false, "rir": "2", "figura": "fig-curl-ez", "progressionePrincipale": false, "note": "Finisher tricipiti.", "peso": "—" },
+        { "nome": "Hack squat o pressa 45°", "gruppo": "Quadricipiti", "serie": 2, "ripetizioni": "10-12", "tempo": "3-1-2-1", "recupero": "90 sec", "progressione": false, "rir": "3", "figura": "fig-pressa", "progressionePrincipale": false, "note": "Mantenimento gambe.", "peso": "—" },
+        { "nome": "Polpacci alla pressa", "gruppo": "Polpacci", "serie": 2, "ripetizioni": "12-15", "tempo": "3-2-X-2", "recupero": "60 sec", "progressione": false, "rir": "2", "figura": "fig-polpacci", "progressionePrincipale": false, "note": "Mantenimento polpacci.", "peso": "—" }
+      ]
+    },
+    "ac": {
+      "codice": "AC",
+      "nome": "Tirata + braccia",
+      "accoppiamento": "C",
+      "notaSeduta": "Mercoledì · 25% volume. Seduta corta post-lezioni.",
+      "durataMinuti": { "obiettivo": 38, "tetto": 45 },
+      "esercizi": [
+        { "nome": "Trazioni presa neutra", "gruppo": "Dorsali", "serie": 3, "ripetizioni": "5-8", "tempo": "3-1-2-1", "recupero": "150 sec", "progressione": true, "rir": "3→2", "figura": "fig-lat-neutro", "progressionePrincipale": true, "note": "Fondamentale *. Elastico ok.", "peso": "—" },
+        { "nome": "Rematore manubrio su panca", "gruppo": "Dorsali", "serie": 3, "ripetizioni": "8-10 per lato", "tempo": "3-1-2-1", "recupero": "90 sec", "progressione": false, "rir": "2", "figura": "fig-rematore", "progressionePrincipale": false, "note": "Un lato alla volta.", "peso": "—" },
+        { "nome": "Face pull al cavo", "gruppo": "Deltoide posteriore", "serie": 2, "ripetizioni": "15-20", "tempo": "2-1-2-1", "recupero": "60 sec", "progressione": false, "rir": "2", "figura": "fig-reverse-pec", "progressionePrincipale": false, "note": "Equilibrio spalle.", "peso": "—" },
+        { "nome": "Curl inclinato manubri", "gruppo": "Bicipiti", "serie": 3, "ripetizioni": "10-12", "tempo": "2-1-2-1", "recupero": "60 sec", "progressione": false, "rir": "2", "figura": "fig-curl", "progressionePrincipale": false, "note": "Panca 45°.", "peso": "—" }
+      ]
+    },
+    "cb": {
+      "codice": "CB",
+      "nome": "Schiena + petto + braccia",
+      "accoppiamento": "C + A + B",
+      "notaSeduta": "Sabato · 40% volume. Seduta principale del weekend.",
+      "durataMinuti": { "obiettivo": 52, "tetto": 58 },
+      "esercizi": [
+        { "nome": "Rematore bilanciere prona", "gruppo": "Dorsali", "serie": 4, "ripetizioni": "6-8", "tempo": "3-1-X-1", "recupero": "150 sec", "progressione": true, "rir": "2→1", "figura": "fig-rematore", "progressionePrincipale": true, "note": "Fondamentale *. Schiena piatta.", "peso": "—" },
+        { "nome": "Panca inclinata manubri 25°", "gruppo": "Petto alto", "serie": 3, "ripetizioni": "8-10", "tempo": "3-1-X-1", "recupero": "120 sec", "progressione": false, "rir": "2", "figura": "fig-press-incl", "progressionePrincipale": false, "note": "Angolo 25°.", "peso": "—" },
+        { "nome": "Arnold press manubri seduto", "gruppo": "Deltoide", "serie": 3, "ripetizioni": "8-10", "tempo": "3-1-X-1", "recupero": "120 sec", "progressione": false, "rir": "2", "figura": "fig-lento", "progressionePrincipale": false, "note": "Skill spalle.", "peso": "—" },
+        { "nome": "Curl martello manubri", "gruppo": "Bicipiti", "serie": 3, "ripetizioni": "10-12", "tempo": "3-1-2-1", "recupero": "60 sec", "progressione": false, "rir": "2", "figura": "fig-curl-mart", "progressionePrincipale": false, "note": "Brachiale.", "peso": "—" },
+        { "nome": "French press bilanciere EZ", "gruppo": "Tricipiti", "serie": 3, "ripetizioni": "10-12", "tempo": "2-1-2-1", "recupero": "75 sec", "progressione": false, "rir": "2", "figura": "fig-curl-ez", "progressionePrincipale": false, "note": "Gomiti fermi.", "peso": "—" },
+        { "nome": "Leg curl seduto", "gruppo": "Femorali", "serie": 2, "ripetizioni": "12", "tempo": "2-1-2-1", "recupero": "75 sec", "progressione": false, "rir": "3", "figura": "fig-legcurl", "progressionePrincipale": false, "note": "Mantenimento.", "peso": "—" },
+        { "nome": "Abductor machine", "gruppo": "Glutei", "serie": 2, "ripetizioni": "15", "tempo": "2-1-2-1", "recupero": "60 sec", "progressione": false, "rir": "3", "figura": "fig-doktor", "progressionePrincipale": false, "note": "Mantenimento glutei.", "peso": "—" }
+      ]
+    }
+  },
+  "perche": "Nicola ha già gambe, glutei e polpacci molto sviluppati. Questa fase costruisce la base tecnica e il tessuto muscolare del busto senza bruciare i recuperi da studente.",
+  "intensitaRecupero": {
+    "intensita": "Sett. 1–4 RIR 3–2 · 5–8 RIR 2 · 9 scarico −25% · 10–12 RIR 1–2 · 13 deload −40%",
+    "recupero": "Fondamentali * 2–2,5 min · isolamento 60–75 s",
+    "durataSeduta": "45→55 min (fase 1) · dal mese 4 max 60 min",
+    "deload": "settimana 13 · −40% volume",
+    "split": "Lun AB 35% · Mer AC 25% · Sab CB 40%"
+  },
+  "rir": "sett. 6–8: RIR 2"
+}

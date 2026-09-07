@@ -37,6 +37,8 @@
       "giorni": ["Lunedì AB", "Mercoledì AC", "Sabato CB"],
       "rir": "sett. 1–4: RIR 3–2 · sett. 5–8: RIR 2 · sett. 9–12: RIR 1–2 · sett. 13: deload",
       "obiettivo": "Imparare i fondamentali della parte alta con carichi moderati. Gambe solo mantenimento. Non inseguire PR: qualità del movimento prima del peso.",
+      "guida": "Fase di costruzione tecnica sul busto. RIR 3→1 progressivo, deload sett. 13. Gambe in mantenimento.",
+      "schedaIntro": "Lun AB (35%) · Mer AC (25%) · Sab CB (40%). Parte alta ~70%. Pesi a penna.",
       "perche": "Nicola ha già gambe, glutei e polpacci molto sviluppati. Questa fase costruisce la base tecnica e il tessuto muscolare del busto senza bruciare i recuperi da studente.",
       "intensitaRecupero": {
         "intensita": "Sett. 1–4 RIR 3–2 (presa di confidenza) · 5–8 RIR 2 · 9 scarico −25% volume · 10–12 picco controllato · 13 deload −40%",

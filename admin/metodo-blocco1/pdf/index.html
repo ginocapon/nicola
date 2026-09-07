@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PDF · Metodo Blocco 1 | Nicola</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="/css/styles.css?v=1">
+<link rel="stylesheet" href="/admin/css/admin-metodo-print.css?v=1">
+<script src="/js/site-base.js"></script>
+</head>
+<body class="admin-metodo-pdf">
+<div class="admin-pdf-toolbar no-print">
+  <div class="admin-pdf-toolbar__inner wrap">
+    <p><strong>Metodo Blocco 1 · PDF stampabile</strong></p>
+    <div class="btn-row">
+      <button type="button" class="btn btn-primary" id="metodo-print-btn">Stampa / Salva PDF</button>
+      <a class="btn btn-ghost" href="/admin/metodo-blocco1/">Versione online</a>
+      <a class="btn btn-ghost" href="/admin/fase/pdf/?fase=ipertrofia-accumulo">PDF schede AB–CB</a>
+    </div>
+  </div>
+</div>
+<main id="metodo-root"><p>Caricamento PDF…</p></main>
+<script>
+document.getElementById("metodo-print-btn").addEventListener("click", function () { window.print(); });
+</script>
+<script src="/admin/js/metodo-blocco1.js?v=1" defer></script>
+</body>
+</html>
