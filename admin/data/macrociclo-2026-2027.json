@@ -3,9 +3,9 @@
     "nome": "Macrociclo 2026–2027 · Nicola",
     "inizio": "2026-09-08",
     "fine": "2027-08-31",
-    "descrizione": "Ciclo annuale Nicola: 4 fasi × 13 settimane, 3 sedute/settimana (AB · AC · CB). Priorità parte alta ~70%. Gambe in mantenimento. Deload settimana 13.",
+    "descrizione": "Ciclo annuale Nicola: 4 fasi × 13 settimane, 3 sedute/settimana. Lun e Sab parte alta completa (35% + 40%). Mer gambe generali (no polpacci) + bicipiti 3×8. Deload sett. 13.",
     "frequenza": "3 sessioni/settimana",
-    "lineeGuida": "4 fasi × 13 sett. · Lun AB (35%) · Mer AC (25%) · Sab CB (40%) · ~70% serie parte alta · Fase 1: 45–55 min · Dal mese 4: max 60 min · Deload sett. 13",
+    "lineeGuida": "4 fasi × 13 sett. · Lun AB parte alta 35% · Mer AC gambe + bicipiti 3×8 · Sab CB parte alta 40% · ~75% serie busto · No polpacci · Deload sett. 13",
     "profilo": {
       "nomeStampa": "Nicola",
       "eta": null,
@@ -14,11 +14,11 @@
       "torace_cm": 83,
       "braccio_cm": 30,
       "livello": "principiante-intermedio (studente)",
-      "obiettivoAnno": "Sviluppare parte alta (petto, schiena, spalle, braccia) mantenendo gambe/glutei/polpacci già avanzati",
+      "obiettivoAnno": "Sviluppare parte alta (petto, schiena, spalle, braccia). Gambe solo richiamo mercoledì — polpacci esclusi.",
       "giorniSettimana": 3,
-      "split": "AB – AC / C–B",
-      "prioritaVolume": "parte alta ~70%",
-      "distribuzioneGiorni": "Lunedì 35% · Mercoledì 25% · Sabato 40%",
+      "split": "Lun/Sab parte alta · Mer gambe + bicipiti 3×8",
+      "prioritaVolume": "parte alta ~75% · gambe richiamo mercoledì",
+      "distribuzioneGiorni": "Lun 35% parte alta · Mer 25% gambe + bicipiti · Sab 40% parte alta",
       "attrezzaturaBase": "Palestra commerciale: bilanciere, manubri, cavi, macchine",
       "limitiInfortuni": null,
       "dataInizio": "2026-09-08",
@@ -34,7 +34,11 @@
       "inizio": "2026-09-08",
       "fine": "2026-12-07",
       "settimane": 13,
-      "giorni": ["Lunedì AB", "Mercoledì AC", "Sabato CB"],
+      "giorni": [
+        "Lunedì AB",
+        "Mercoledì AC",
+        "Sabato CB"
+      ],
       "rir": "sett. 1–4: RIR 3–2 · sett. 5–8: RIR 2 · sett. 9–12: RIR 1–2 · sett. 13: deload",
       "obiettivo": "Imparare i fondamentali della parte alta con carichi moderati. Gambe solo mantenimento. Non inseguire PR: qualità del movimento prima del peso.",
       "perche": "Nicola ha già gambe, glutei e polpacci molto sviluppati. Questa fase costruisce la base tecnica e il tessuto muscolare del busto senza bruciare i recuperi da studente.",
@@ -43,17 +47,20 @@
         "recupero": "Fondamentali (*) 2–2,5 min · isolamento 60–75 s · accoppia l’accessorio nel recupero del fondamentale",
         "durataSeduta": "45 min (sett. 1–4) → 50 min (5–8) → 55 min (9–12) · sett. 13: 40 min",
         "deload": "settimana 13 · −40% volume",
-        "split": "Lun AB 35% · Mer AC 25% · Sab CB 40%"
+        "split": "Lun AB 35% parte alta · Mer AC gambe + bicipiti · Sab CB 40% parte alta"
       },
       "sessioni": {
         "ab": {
-          "nome": "AB · Spinta + gambe brevi",
+          "nome": "AB · Parte alta completa A",
           "codice": "AB",
           "giorno": "Lunedì",
           "quotaVolume": "35%",
-          "accoppiamento": "A + B",
-          "notaSeduta": "Seduta di spinta: petto, spalle, tricipiti. Gambe in 2 esercizi leggeri (già sviluppate). Durata target 45–50 min.",
-          "durataMinuti": { "obiettivo": 48, "tetto": 55 },
+          "accoppiamento": "Petto · schiena · spalle · braccia",
+          "notaSeduta": "Parte alta completa: petto, schiena, spalle, braccia. Zero gambe. Target 48–52 min.",
+          "durataMinuti": {
+            "obiettivo": 50,
+            "tetto": 55
+          },
           "esercizi": [
             {
               "nome": "Panca piana bilanciere",
@@ -64,139 +71,18 @@
               "recupero": "150 sec",
               "rir": "3→2",
               "progressione": true,
-              "note": "Fondamentale *. Scapole addotte, piedi a terra, discesa controllata 2–3 sec. Non rimbalzare sul petto. Filma le prime serie per controllare la tecnica."
+              "note": "Fondamentale *. Petto piatto — apre la settimana parte alta."
             },
-            {
-              "nome": "Dip alle parallele",
-              "gruppo": "Petto / tricipiti",
-              "serie": 3,
-              "ripetizioni": "6–10",
-              "peso": "—",
-              "recupero": "120 sec",
-              "rir": "2",
-              "progressione": false,
-              "note": "Skill propositivo. Leggera inclinazione del busto per il petto. Se non arrivi a 6 rep pulite, usa gravità assistita o elastico."
-            },
-            {
-              "nome": "Alzate laterali manubri",
-              "gruppo": "Deltoide laterale",
-              "serie": 3,
-              "ripetizioni": "12–15",
-              "peso": "—",
-              "recupero": "60 sec",
-              "rir": "2",
-              "progressione": false,
-              "note": "Gomiti morbidi, polso neutro, discesa lenta. Accoppia nel recupero della panca se serve risparmiare tempo."
-            },
-            {
-              "nome": "Pushdown corda al cavo",
-              "gruppo": "Tricipiti",
-              "serie": 2,
-              "ripetizioni": "12–15",
-              "peso": "—",
-              "recupero": "60 sec",
-              "rir": "2",
-              "progressione": false,
-              "note": "Gomiti fermi ai fianchi. Separa la corda in chiusura."
-            },
-            {
-              "nome": "Hack squat o pressa 45°",
-              "gruppo": "Quadricipiti",
-              "serie": 2,
-              "ripetizioni": "10–12",
-              "peso": "—",
-              "recupero": "90 sec",
-              "rir": "3",
-              "progressione": false,
-              "note": "Mantenimento gambe — volume basso. ROM completo, niente cedimento."
-            },
-            {
-              "nome": "Polpacci alla pressa",
-              "gruppo": "Polpacci",
-              "serie": 2,
-              "ripetizioni": "12–15",
-              "peso": "—",
-              "recupero": "60 sec",
-              "rir": "2",
-              "progressione": false,
-              "note": "Mantenimento — polpacci già molto sviluppati. Pausa 2 sec in basso."
-            }
-          ]
-        },
-        "ac": {
-          "nome": "AC · Tirata + braccia",
-          "codice": "AC",
-          "giorno": "Mercoledì",
-          "quotaVolume": "25%",
-          "accoppiamento": "C",
-          "notaSeduta": "Seduta più corta della settimana. Focus tirata e braccia. Ideale dopo le lezioni: entra, lavora bene, esci in ~35–40 min.",
-          "durataMinuti": { "obiettivo": 38, "tetto": 45 },
-          "esercizi": [
             {
               "nome": "Trazioni presa neutra",
               "gruppo": "Dorsali",
               "serie": 3,
-              "ripetizioni": "5–8",
+              "ripetizioni": "6–8",
               "peso": "—",
               "recupero": "150 sec",
               "rir": "3→2",
               "progressione": true,
-              "note": "Fondamentale *. Petto verso la sbarra, scapole giù prima di tirare. Elastico o gravità assistita se serve — meglio 5 rep pulite che 3 sporche."
-            },
-            {
-              "nome": "Rematore manubrio su panca",
-              "gruppo": "Dorsali / romboidi",
-              "serie": 3,
-              "ripetizioni": "8–10 per lato",
-              "peso": "—",
-              "recupero": "90 sec",
-              "rir": "2",
-              "progressione": false,
-              "note": "Busto parallelo al pavimento, gomito verso il fianco. Inizia dal lato più debole."
-            },
-            {
-              "nome": "Face pull al cavo",
-              "gruppo": "Deltoide posteriore",
-              "serie": 2,
-              "ripetizioni": "15–20",
-              "peso": "—",
-              "recupero": "60 sec",
-              "rir": "2",
-              "progressione": false,
-              "note": "Cavo all’altezza del viso. Ruota leggermente i polsi in chiusura. Essenziale per equilibrare le spalle."
-            },
-            {
-              "nome": "Curl inclinato manubri",
-              "gruppo": "Bicipiti",
-              "serie": 3,
-              "ripetizioni": "10–12",
-              "peso": "—",
-              "recupero": "60 sec",
-              "rir": "2",
-              "progressione": false,
-              "note": "Panca 45°. Braccia verticali, niente slancio col busto."
-            }
-          ]
-        },
-        "cb": {
-          "nome": "CB · Tirata + spinta + gambe minime",
-          "codice": "CB",
-          "giorno": "Sabato",
-          "quotaVolume": "40%",
-          "accoppiamento": "C + A + B",
-          "notaSeduta": "Seduta più lunga del weekend. Schiena e petto inclinato, braccia, chiusura con gambe minime. Target 50–55 min in fase 1.",
-          "durataMinuti": { "obiettivo": 52, "tetto": 58 },
-          "esercizi": [
-            {
-              "nome": "Rematore bilanciere prona",
-              "gruppo": "Dorsali",
-              "serie": 4,
-              "ripetizioni": "6–8",
-              "peso": "—",
-              "recupero": "150 sec",
-              "rir": "2→1",
-              "progressione": true,
-              "note": "Fondamentale *. Busto ~45°, schiena piatta, tirare verso l’ombelico. Se perdi la posizione, scendi di peso."
+              "note": "Fondamentale *. Tirata verticale. Elastico se serve — rep pulite."
             },
             {
               "nome": "Panca inclinata manubri 25°",
@@ -207,7 +93,178 @@
               "recupero": "120 sec",
               "rir": "2",
               "progressione": false,
-              "note": "Angolo basso (25°) per lavorare il petto alto senza spostare troppo il carico sulle spalle."
+              "note": "Angolo basso, focus petto alto."
+            },
+            {
+              "nome": "Alzate laterali manubri",
+              "gruppo": "Deltoide laterale",
+              "serie": 3,
+              "ripetizioni": "12–15",
+              "peso": "—",
+              "recupero": "60 sec",
+              "rir": "2",
+              "progressione": false,
+              "note": "Spalle laterali."
+            },
+            {
+              "nome": "Face pull al cavo",
+              "gruppo": "Deltoide posteriore",
+              "serie": 2,
+              "ripetizioni": "15–20",
+              "peso": "—",
+              "recupero": "60 sec",
+              "rir": "2",
+              "progressione": false,
+              "note": "Posteriori spalla — equilibrio petto/schiena."
+            },
+            {
+              "nome": "Dip alle parallele",
+              "gruppo": "Petto / tricipiti",
+              "serie": 3,
+              "ripetizioni": "6–10",
+              "peso": "—",
+              "recupero": "120 sec",
+              "rir": "2",
+              "progressione": false,
+              "note": "Chiusura spinta. Leggera inclinazione busto per il petto."
+            },
+            {
+              "nome": "Pushdown corda al cavo",
+              "gruppo": "Tricipiti",
+              "serie": 2,
+              "ripetizioni": "12–15",
+              "peso": "—",
+              "recupero": "60 sec",
+              "rir": "2",
+              "progressione": false,
+              "note": "Tricipiti."
+            },
+            {
+              "nome": "Curl martello manubri",
+              "gruppo": "Bicipiti / brachiale",
+              "serie": 2,
+              "ripetizioni": "10–12",
+              "peso": "—",
+              "recupero": "60 sec",
+              "rir": "2",
+              "progressione": false,
+              "note": "Richiamo bicipiti (focus 3×8 mercoledì)."
+            }
+          ]
+        },
+        "ac": {
+          "nome": "AC · Gambe + bicipiti",
+          "codice": "AC",
+          "giorno": "Mercoledì",
+          "quotaVolume": "25%",
+          "accoppiamento": "Gambe generali · bicipiti 3×8",
+          "notaSeduta": "Seduta breve post-lezioni: richiamo gambe generali (quad, femorali, glutei). Nessun polpaccio. Bicipiti 3×8 fissi.",
+          "durataMinuti": {
+            "obiettivo": 35,
+            "tetto": 42
+          },
+          "esercizi": [
+            {
+              "nome": "Hack squat o pressa 45°",
+              "gruppo": "Quadricipiti",
+              "serie": 3,
+              "ripetizioni": "10–12",
+              "peso": "—",
+              "recupero": "120 sec",
+              "rir": "3",
+              "progressione": false,
+              "note": "Richiamo gambe — quad. ROM completo, niente cedimento."
+            },
+            {
+              "nome": "Leg curl seduto",
+              "gruppo": "Femorali",
+              "serie": 3,
+              "ripetizioni": "10–12",
+              "peso": "—",
+              "recupero": "90 sec",
+              "rir": "3",
+              "progressione": false,
+              "note": "Femorali — mantenimento."
+            },
+            {
+              "nome": "Hip thrust macchina o bilanciere",
+              "gruppo": "Glutei",
+              "serie": 3,
+              "ripetizioni": "10–12",
+              "peso": "—",
+              "recupero": "90 sec",
+              "rir": "3",
+              "progressione": false,
+              "note": "Glutei — richiamo generale. Già sviluppati: stimolo, non crescita."
+            },
+            {
+              "nome": "Leg extension leggero",
+              "gruppo": "Quadricipiti",
+              "serie": 2,
+              "ripetizioni": "12–15",
+              "peso": "—",
+              "recupero": "75 sec",
+              "rir": "3",
+              "progressione": false,
+              "note": "Finisher quad — carico moderato."
+            },
+            {
+              "nome": "Curl bilanciere EZ",
+              "gruppo": "Bicipiti",
+              "serie": 3,
+              "ripetizioni": "8",
+              "peso": "—",
+              "recupero": "75 sec",
+              "rir": "2",
+              "progressione": false,
+              "note": "3×8 bicipiti fissi — unica parte alta del mercoledì. Gomiti fermi, no slancio."
+            }
+          ]
+        },
+        "cb": {
+          "nome": "CB · Parte alta completa B",
+          "codice": "CB",
+          "giorno": "Sabato",
+          "quotaVolume": "40%",
+          "accoppiamento": "Petto · schiena · spalle · braccia",
+          "notaSeduta": "Parte alta completa del weekend — volume maggiore (40%). Tutti i distretti del busto, zero gambe.",
+          "durataMinuti": {
+            "obiettivo": 52,
+            "tetto": 58
+          },
+          "esercizi": [
+            {
+              "nome": "Rematore bilanciere prona",
+              "gruppo": "Dorsali",
+              "serie": 4,
+              "ripetizioni": "6–8",
+              "peso": "—",
+              "recupero": "150 sec",
+              "rir": "2→1",
+              "progressione": true,
+              "note": "Fondamentale *. Schiena — seduta principale del sabato."
+            },
+            {
+              "nome": "Lat machine presa larga",
+              "gruppo": "Dorsali",
+              "serie": 3,
+              "ripetizioni": "10–12",
+              "peso": "—",
+              "recupero": "120 sec",
+              "rir": "2",
+              "progressione": false,
+              "note": "Tirata verticale — completa il lavoro dorsali."
+            },
+            {
+              "nome": "Panca piana manubri",
+              "gruppo": "Petto",
+              "serie": 3,
+              "ripetizioni": "8–10",
+              "peso": "—",
+              "recupero": "120 sec",
+              "rir": "2",
+              "progressione": false,
+              "note": "Petto — variante rispetto al lunedì col bilanciere."
             },
             {
               "nome": "Arnold press manubri seduto",
@@ -218,18 +275,18 @@
               "recupero": "120 sec",
               "rir": "2",
               "progressione": false,
-              "note": "Skill spalle: rotazione controllata, carico moderato. Core attivo, schiena appoggiata."
+              "note": "Spalle complete — anteriori e laterali."
             },
             {
-              "nome": "Curl martello manubri",
-              "gruppo": "Bicipiti / brachiale",
+              "nome": "Alzate posteriori manubri",
+              "gruppo": "Deltoide posteriore",
               "serie": 3,
-              "ripetizioni": "10–12",
+              "ripetizioni": "12–15",
               "peso": "—",
               "recupero": "60 sec",
               "rir": "2",
               "progressione": false,
-              "note": "Presa neutra. Alternato o simultaneo."
+              "note": "Posteriori spalla — bilancia il volume spinta."
             },
             {
               "nome": "French press bilanciere EZ",
@@ -240,29 +297,29 @@
               "recupero": "75 sec",
               "rir": "2",
               "progressione": false,
-              "note": "Gomiti fermi, discesa lenta verso la fronte o dietro la testa."
+              "note": "Tricipiti."
             },
             {
-              "nome": "Leg curl seduto",
-              "gruppo": "Femorali",
-              "serie": 2,
-              "ripetizioni": "12",
-              "peso": "—",
-              "recupero": "75 sec",
-              "rir": "3",
-              "progressione": false,
-              "note": "Mantenimento femorali — volume minimo."
-            },
-            {
-              "nome": "Abductor machine",
-              "gruppo": "Glutei",
-              "serie": 2,
-              "ripetizioni": "15",
+              "nome": "Curl inclinato manubri",
+              "gruppo": "Bicipiti",
+              "serie": 3,
+              "ripetizioni": "10–12",
               "peso": "—",
               "recupero": "60 sec",
-              "rir": "3",
+              "rir": "2",
               "progressione": false,
-              "note": "Glutei già sviluppati: 2 serie di stimolo, non di crescita."
+              "note": "Bicipiti — complemento al martello del lunedì."
+            },
+            {
+              "nome": "Croci ai cavi alti",
+              "gruppo": "Petto",
+              "serie": 2,
+              "ripetizioni": "12–15",
+              "peso": "—",
+              "recupero": "60 sec",
+              "rir": "2",
+              "progressione": false,
+              "note": "Finisher petto — pump controllato."
             }
           ]
         }
@@ -274,7 +331,11 @@
       "inizio": "2026-12-08",
       "fine": "2027-03-07",
       "settimane": 13,
-      "giorni": ["Lunedì AB", "Mercoledì AC", "Sabato CB"],
+      "giorni": [
+        "Lunedì AB",
+        "Mercoledì AC",
+        "Sabato CB"
+      ],
       "rir": "RIR 1–2",
       "obiettivo": "Stessi esercizi, meno ripetizioni e più carico. Sedute max 60 min. Progressione solo se la tecnica resta pulita.",
       "perche": "Tradurre la tecnica imparata in fase 1 in forza reale sul busto. Gambe restano in mantenimento.",
@@ -283,54 +344,280 @@
         "recupero": "Fondamentali * 2,5–3 min · isolamento 60–75 s",
         "durataSeduta": "max 60 min",
         "deload": "settimana 13 · −40% volume",
-        "split": "Lun AB 35% · Mer AC 25% · Sab CB 40%"
+        "split": "Lun AB 35% parte alta · Mer AC gambe + bicipiti · Sab CB 40% parte alta"
       },
       "sessioni": {
         "ab": {
-          "nome": "AB · Spinta + gambe brevi",
+          "nome": "AB · Parte alta completa A",
           "codice": "AB",
           "giorno": "Lunedì",
           "quotaVolume": "35%",
-          "notaSeduta": "Stessi movimenti fase 1. Panca 4×6–8. Dip 3×5–8. Gambe 2+2 serie mantenimento.",
-          "durataMinuti": { "obiettivo": 55, "tetto": 60 },
+          "accoppiamento": "Petto · schiena · spalle · braccia",
+          "notaSeduta": "Parte alta completa — fase forza. Stessi movimenti, rep più basse sui *.",
+          "durataMinuti": {
+            "obiettivo": 55,
+            "tetto": 60
+          },
           "esercizi": [
-            { "nome": "Panca piana bilanciere", "gruppo": "Petto", "serie": 4, "ripetizioni": "6–8", "peso": "—", "recupero": "180 sec", "rir": "1–2", "progressione": true, "note": "Progressione carico. Ultima serie RIR 1 solo se la forma è perfetta." },
-            { "nome": "Dip alle parallele", "gruppo": "Petto / tricipiti", "serie": 3, "ripetizioni": "5–8", "peso": "—", "recupero": "120 sec", "rir": "1–2", "progressione": false, "note": "Aggiungi zavorra leggera solo se fai 8+ rep pulite." },
-            { "nome": "Alzate laterali manubri", "gruppo": "Deltoide laterale", "serie": 3, "ripetizioni": "10–12", "peso": "—", "recupero": "60 sec", "rir": "1–2", "progressione": false, "note": "Carico un filo più alto, stessa qualità." },
-            { "nome": "Pushdown corda al cavo", "gruppo": "Tricipiti", "serie": 2, "ripetizioni": "10–12", "peso": "—", "recupero": "60 sec", "rir": "1–2", "progressione": false, "note": "Finisher tricipiti." },
-            { "nome": "Hack squat o pressa 45°", "gruppo": "Quadricipiti", "serie": 2, "ripetizioni": "8–10", "peso": "—", "recupero": "90 sec", "rir": "2", "progressione": false, "note": "Mantenimento." },
-            { "nome": "Polpacci alla pressa", "gruppo": "Polpacci", "serie": 2, "ripetizioni": "10–12", "peso": "—", "recupero": "60 sec", "rir": "2", "progressione": false, "note": "Mantenimento." }
+            {
+              "nome": "Panca piana bilanciere",
+              "gruppo": "Petto",
+              "serie": 4,
+              "ripetizioni": "6–8",
+              "peso": "—",
+              "recupero": "180 sec",
+              "rir": "1–2",
+              "progressione": true,
+              "note": "Progressione carico."
+            },
+            {
+              "nome": "Trazioni presa neutra",
+              "gruppo": "Dorsali",
+              "serie": 3,
+              "ripetizioni": "4–6",
+              "peso": "—",
+              "recupero": "180 sec",
+              "rir": "1–2",
+              "progressione": true,
+              "note": "Forza tirata."
+            },
+            {
+              "nome": "Panca inclinata manubri 25°",
+              "gruppo": "Petto alto",
+              "serie": 3,
+              "ripetizioni": "6–8",
+              "peso": "—",
+              "recupero": "120 sec",
+              "rir": "1–2",
+              "progressione": false,
+              "note": "Petto alto."
+            },
+            {
+              "nome": "Alzate laterali manubri",
+              "gruppo": "Deltoide laterale",
+              "serie": 3,
+              "ripetizioni": "10–12",
+              "peso": "—",
+              "recupero": "60 sec",
+              "rir": "1–2",
+              "progressione": false,
+              "note": "Spalle."
+            },
+            {
+              "nome": "Face pull al cavo",
+              "gruppo": "Deltoide posteriore",
+              "serie": 2,
+              "ripetizioni": "12–15",
+              "peso": "—",
+              "recupero": "60 sec",
+              "rir": "1–2",
+              "progressione": false,
+              "note": "Posteriori."
+            },
+            {
+              "nome": "Dip alle parallele",
+              "gruppo": "Petto / tricipiti",
+              "serie": 3,
+              "ripetizioni": "5–8",
+              "peso": "—",
+              "recupero": "120 sec",
+              "rir": "1–2",
+              "progressione": false,
+              "note": "Zavorra leggera se 8+ rep pulite."
+            },
+            {
+              "nome": "Pushdown corda al cavo",
+              "gruppo": "Tricipiti",
+              "serie": 2,
+              "ripetizioni": "10–12",
+              "peso": "—",
+              "recupero": "60 sec",
+              "rir": "1–2",
+              "progressione": false,
+              "note": "Tricipiti."
+            },
+            {
+              "nome": "Curl martello manubri",
+              "gruppo": "Bicipiti",
+              "serie": 2,
+              "ripetizioni": "8–10",
+              "peso": "—",
+              "recupero": "60 sec",
+              "rir": "1–2",
+              "progressione": false,
+              "note": "Bicipiti."
+            }
           ]
         },
         "ac": {
-          "nome": "AC · Tirata + braccia",
+          "nome": "AC · Gambe + bicipiti",
           "codice": "AC",
           "giorno": "Mercoledì",
           "quotaVolume": "25%",
-          "notaSeduta": "Trazioni 3×4–6. Seduta compatta, max 45 min.",
-          "durataMinuti": { "obiettivo": 42, "tetto": 48 },
+          "accoppiamento": "Gambe generali · bicipiti 3×8",
+          "notaSeduta": "Gambe richiamo + bicipiti 3×8. Max 40 min.",
+          "durataMinuti": {
+            "obiettivo": 38,
+            "tetto": 42
+          },
           "esercizi": [
-            { "nome": "Trazioni presa neutra", "gruppo": "Dorsali", "serie": 3, "ripetizioni": "4–6", "peso": "—", "recupero": "180 sec", "rir": "1–2", "progressione": true, "note": "Obiettivo: trazioni libere. Zavorra leggera se superi 6 rep." },
-            { "nome": "Rematore manubrio su panca", "gruppo": "Dorsali", "serie": 3, "ripetizioni": "6–8 per lato", "peso": "—", "recupero": "90 sec", "rir": "1–2", "progressione": false, "note": "Carico progressivo." },
-            { "nome": "Face pull al cavo", "gruppo": "Deltoide posteriore", "serie": 2, "ripetizioni": "12–15", "peso": "—", "recupero": "60 sec", "rir": "1–2", "progressione": false, "note": "Equilibrio spalle." },
-            { "nome": "Curl inclinato manubri", "gruppo": "Bicipiti", "serie": 3, "ripetizioni": "8–10", "peso": "—", "recupero": "60 sec", "rir": "1–2", "progressione": false, "note": "Più pesante, meno rep." }
+            {
+              "nome": "Hack squat o pressa 45°",
+              "gruppo": "Quadricipiti",
+              "serie": 3,
+              "ripetizioni": "8–10",
+              "peso": "—",
+              "recupero": "120 sec",
+              "rir": "2",
+              "progressione": false,
+              "note": "Richiamo quad."
+            },
+            {
+              "nome": "Leg curl seduto",
+              "gruppo": "Femorali",
+              "serie": 3,
+              "ripetizioni": "8–10",
+              "peso": "—",
+              "recupero": "90 sec",
+              "rir": "2",
+              "progressione": false,
+              "note": "Femorali."
+            },
+            {
+              "nome": "Hip thrust macchina o bilanciere",
+              "gruppo": "Glutei",
+              "serie": 3,
+              "ripetizioni": "8–10",
+              "peso": "—",
+              "recupero": "90 sec",
+              "rir": "2",
+              "progressione": false,
+              "note": "Glutei."
+            },
+            {
+              "nome": "Leg extension leggero",
+              "gruppo": "Quadricipiti",
+              "serie": 2,
+              "ripetizioni": "10–12",
+              "peso": "—",
+              "recupero": "75 sec",
+              "rir": "2",
+              "progressione": false,
+              "note": "Quad."
+            },
+            {
+              "nome": "Curl bilanciere EZ",
+              "gruppo": "Bicipiti",
+              "serie": 3,
+              "ripetizioni": "8",
+              "peso": "—",
+              "recupero": "75 sec",
+              "rir": "1–2",
+              "progressione": false,
+              "note": "3×8 bicipiti — carico progressivo se la forma resta pulita."
+            }
           ]
         },
         "cb": {
-          "nome": "CB · Tirata + spinta + gambe minime",
+          "nome": "CB · Parte alta completa B",
           "codice": "CB",
           "giorno": "Sabato",
           "quotaVolume": "40%",
-          "notaSeduta": "Rematore 4×4–6. Seduta principale del weekend, max 60 min.",
-          "durataMinuti": { "obiettivo": 58, "tetto": 60 },
+          "accoppiamento": "Petto · schiena · spalle · braccia",
+          "notaSeduta": "Parte alta completa — seduta principale settimana. Max 60 min.",
+          "durataMinuti": {
+            "obiettivo": 58,
+            "tetto": 60
+          },
           "esercizi": [
-            { "nome": "Rematore bilanciere prona", "gruppo": "Dorsali", "serie": 4, "ripetizioni": "4–6", "peso": "—", "recupero": "180 sec", "rir": "1–2", "progressione": true, "note": "Progressione principale fase 2." },
-            { "nome": "Panca inclinata manubri 25°", "gruppo": "Petto alto", "serie": 3, "ripetizioni": "6–8", "peso": "—", "recupero": "120 sec", "rir": "1–2", "progressione": false, "note": "Carico progressivo." },
-            { "nome": "Arnold press manubri seduto", "gruppo": "Deltoide", "serie": 3, "ripetizioni": "6–8", "peso": "—", "recupero": "120 sec", "rir": "1–2", "progressione": false, "note": "Skill + forza spalle." },
-            { "nome": "Curl martello manubri", "gruppo": "Bicipiti", "serie": 3, "ripetizioni": "8–10", "peso": "—", "recupero": "60 sec", "rir": "1–2", "progressione": false, "note": "Brachiale." },
-            { "nome": "French press bilanciere EZ", "gruppo": "Tricipiti", "serie": 3, "ripetizioni": "8–10", "peso": "—", "recupero": "75 sec", "rir": "1–2", "progressione": false, "note": "Tricipiti." },
-            { "nome": "Leg curl seduto", "gruppo": "Femorali", "serie": 2, "ripetizioni": "10", "peso": "—", "recupero": "75 sec", "rir": "2", "progressione": false, "note": "Mantenimento." },
-            { "nome": "Abductor machine", "gruppo": "Glutei", "serie": 2, "ripetizioni": "12", "peso": "—", "recupero": "60 sec", "rir": "2", "progressione": false, "note": "Mantenimento." }
+            {
+              "nome": "Rematore bilanciere prona",
+              "gruppo": "Dorsali",
+              "serie": 4,
+              "ripetizioni": "4–6",
+              "peso": "—",
+              "recupero": "180 sec",
+              "rir": "1–2",
+              "progressione": true,
+              "note": "Progressione principale fase 2."
+            },
+            {
+              "nome": "Lat machine presa larga",
+              "gruppo": "Dorsali",
+              "serie": 3,
+              "ripetizioni": "8–10",
+              "peso": "—",
+              "recupero": "120 sec",
+              "rir": "1–2",
+              "progressione": false,
+              "note": "Dorsali."
+            },
+            {
+              "nome": "Panca piana manubri",
+              "gruppo": "Petto",
+              "serie": 3,
+              "ripetizioni": "6–8",
+              "peso": "—",
+              "recupero": "120 sec",
+              "rir": "1–2",
+              "progressione": false,
+              "note": "Petto."
+            },
+            {
+              "nome": "Arnold press manubri seduto",
+              "gruppo": "Deltoide",
+              "serie": 3,
+              "ripetizioni": "6–8",
+              "peso": "—",
+              "recupero": "120 sec",
+              "rir": "1–2",
+              "progressione": false,
+              "note": "Spalle."
+            },
+            {
+              "nome": "Alzate posteriori manubri",
+              "gruppo": "Deltoide posteriore",
+              "serie": 3,
+              "ripetizioni": "10–12",
+              "peso": "—",
+              "recupero": "60 sec",
+              "rir": "1–2",
+              "progressione": false,
+              "note": "Posteriori."
+            },
+            {
+              "nome": "French press bilanciere EZ",
+              "gruppo": "Tricipiti",
+              "serie": 3,
+              "ripetizioni": "8–10",
+              "peso": "—",
+              "recupero": "75 sec",
+              "rir": "1–2",
+              "progressione": false,
+              "note": "Tricipiti."
+            },
+            {
+              "nome": "Curl inclinato manubri",
+              "gruppo": "Bicipiti",
+              "serie": 3,
+              "ripetizioni": "8–10",
+              "peso": "—",
+              "recupero": "60 sec",
+              "rir": "1–2",
+              "progressione": false,
+              "note": "Bicipiti."
+            },
+            {
+              "nome": "Croci ai cavi alti",
+              "gruppo": "Petto",
+              "serie": 2,
+              "ripetizioni": "10–12",
+              "peso": "—",
+              "recupero": "60 sec",
+              "rir": "1–2",
+              "progressione": false,
+              "note": "Petto."
+            }
           ]
         }
       }
@@ -341,7 +628,11 @@
       "inizio": "2027-03-08",
       "fine": "2027-06-06",
       "settimane": 13,
-      "giorni": ["Lunedì AB", "Mercoledì AC", "Sabato CB"],
+      "giorni": [
+        "Lunedì AB",
+        "Mercoledì AC",
+        "Sabato CB"
+      ],
       "rir": "RIR 1–2",
       "obiettivo": "Riportare volume sul busto con la forza acquisita. Stessi esercizi, 8–12 rep, max 60 min.",
       "perche": "La forza della fase 2 torna ipertrofia: più volume sul petto, schiena e braccia senza cambiare movimenti.",
@@ -350,54 +641,280 @@
         "recupero": "Come fase 1: * 2–2,5 min · isolamento ~60 s",
         "durataSeduta": "max 60 min",
         "deload": "settimana 13 · −40% volume",
-        "split": "Lun AB 35% · Mer AC 25% · Sab CB 40%"
+        "split": "Lun AB 35% parte alta · Mer AC gambe + bicipiti · Sab CB 40% parte alta"
       },
       "sessioni": {
         "ab": {
-          "nome": "AB · Spinta + gambe brevi",
+          "nome": "AB · Parte alta completa A",
           "codice": "AB",
           "giorno": "Lunedì",
           "quotaVolume": "35%",
-          "notaSeduta": "Volume pieno sul busto. Gambe invariato (mantenimento).",
-          "durataMinuti": { "obiettivo": 58, "tetto": 60 },
+          "accoppiamento": "Petto · schiena · spalle · braccia",
+          "notaSeduta": "Volume ipertrofico parte alta. Gambe solo mercoledì.",
+          "durataMinuti": {
+            "obiettivo": 58,
+            "tetto": 60
+          },
           "esercizi": [
-            { "nome": "Panca piana bilanciere", "gruppo": "Petto", "serie": 4, "ripetizioni": "8–10", "peso": "—", "recupero": "150 sec", "rir": "1–2", "progressione": true, "note": "Volume ipertrofico con carico dalla fase 2." },
-            { "nome": "Dip alle parallele", "gruppo": "Petto / tricipiti", "serie": 3, "ripetizioni": "8–10", "peso": "—", "recupero": "120 sec", "rir": "1–2", "progressione": false, "note": "Zavorra se serve per restare nel range." },
-            { "nome": "Alzate laterali manubri", "gruppo": "Deltoide laterale", "serie": 3, "ripetizioni": "12–15", "peso": "—", "recupero": "60 sec", "rir": "1", "progressione": false, "note": "Pump controllato." },
-            { "nome": "Pushdown corda al cavo", "gruppo": "Tricipiti", "serie": 3, "ripetizioni": "12–15", "peso": "—", "recupero": "60 sec", "rir": "1", "progressione": false, "note": "+1 serie rispetto fase 1." },
-            { "nome": "Hack squat o pressa 45°", "gruppo": "Quadricipiti", "serie": 2, "ripetizioni": "10–12", "peso": "—", "recupero": "90 sec", "rir": "2", "progressione": false, "note": "Mantenimento." },
-            { "nome": "Polpacci alla pressa", "gruppo": "Polpacci", "serie": 2, "ripetizioni": "12–15", "peso": "—", "recupero": "60 sec", "rir": "2", "progressione": false, "note": "Mantenimento." }
+            {
+              "nome": "Panca piana bilanciere",
+              "gruppo": "Petto",
+              "serie": 4,
+              "ripetizioni": "8–10",
+              "peso": "—",
+              "recupero": "150 sec",
+              "rir": "1–2",
+              "progressione": true,
+              "note": "Volume ipertrofico."
+            },
+            {
+              "nome": "Trazioni presa neutra",
+              "gruppo": "Dorsali",
+              "serie": 4,
+              "ripetizioni": "6–8",
+              "peso": "—",
+              "recupero": "150 sec",
+              "rir": "1–2",
+              "progressione": true,
+              "note": "+1 serie dorsali."
+            },
+            {
+              "nome": "Panca inclinata manubri 25°",
+              "gruppo": "Petto alto",
+              "serie": 3,
+              "ripetizioni": "8–10",
+              "peso": "—",
+              "recupero": "120 sec",
+              "rir": "1–2",
+              "progressione": false,
+              "note": "Petto alto."
+            },
+            {
+              "nome": "Alzate laterali manubri",
+              "gruppo": "Deltoide laterale",
+              "serie": 3,
+              "ripetizioni": "12–15",
+              "peso": "—",
+              "recupero": "60 sec",
+              "rir": "1",
+              "progressione": false,
+              "note": "Spalle."
+            },
+            {
+              "nome": "Face pull al cavo",
+              "gruppo": "Deltoide posteriore",
+              "serie": 3,
+              "ripetizioni": "15",
+              "peso": "—",
+              "recupero": "60 sec",
+              "rir": "1",
+              "progressione": false,
+              "note": "+1 serie."
+            },
+            {
+              "nome": "Dip alle parallele",
+              "gruppo": "Petto / tricipiti",
+              "serie": 3,
+              "ripetizioni": "8–10",
+              "peso": "—",
+              "recupero": "120 sec",
+              "rir": "1–2",
+              "progressione": false,
+              "note": "Dip."
+            },
+            {
+              "nome": "Pushdown corda al cavo",
+              "gruppo": "Tricipiti",
+              "serie": 3,
+              "ripetizioni": "12–15",
+              "peso": "—",
+              "recupero": "60 sec",
+              "rir": "1",
+              "progressione": false,
+              "note": "+1 serie tricipiti."
+            },
+            {
+              "nome": "Curl martello manubri",
+              "gruppo": "Bicipiti",
+              "serie": 2,
+              "ripetizioni": "10–12",
+              "peso": "—",
+              "recupero": "60 sec",
+              "rir": "1",
+              "progressione": false,
+              "note": "Bicipiti."
+            }
           ]
         },
         "ac": {
-          "nome": "AC · Tirata + braccia",
+          "nome": "AC · Gambe + bicipiti",
           "codice": "AC",
           "giorno": "Mercoledì",
           "quotaVolume": "25%",
-          "notaSeduta": "Tirata e braccia con volume pieno. Seduta compatta.",
-          "durataMinuti": { "obiettivo": 45, "tetto": 50 },
+          "accoppiamento": "Gambe generali · bicipiti 3×8",
+          "notaSeduta": "Gambe + bicipiti 3×8. Seduta compatta.",
+          "durataMinuti": {
+            "obiettivo": 40,
+            "tetto": 45
+          },
           "esercizi": [
-            { "nome": "Trazioni presa neutra", "gruppo": "Dorsali", "serie": 4, "ripetizioni": "6–8", "peso": "—", "recupero": "150 sec", "rir": "1–2", "progressione": true, "note": "+1 serie. Zavorra per restare nel range." },
-            { "nome": "Rematore manubrio su panca", "gruppo": "Dorsali", "serie": 3, "ripetizioni": "10–12 per lato", "peso": "—", "recupero": "90 sec", "rir": "1–2", "progressione": false, "note": "Volume dorsali." },
-            { "nome": "Face pull al cavo", "gruppo": "Deltoide posteriore", "serie": 3, "ripetizioni": "15", "peso": "—", "recupero": "60 sec", "rir": "1", "progressione": false, "note": "+1 serie." },
-            { "nome": "Curl inclinato manubri", "gruppo": "Bicipiti", "serie": 3, "ripetizioni": "10–12", "peso": "—", "recupero": "60 sec", "rir": "1", "progressione": false, "note": "Bicipiti." }
+            {
+              "nome": "Hack squat o pressa 45°",
+              "gruppo": "Quadricipiti",
+              "serie": 3,
+              "ripetizioni": "10–12",
+              "peso": "—",
+              "recupero": "120 sec",
+              "rir": "2",
+              "progressione": false,
+              "note": "Richiamo quad."
+            },
+            {
+              "nome": "Leg curl seduto",
+              "gruppo": "Femorali",
+              "serie": 3,
+              "ripetizioni": "10–12",
+              "peso": "—",
+              "recupero": "90 sec",
+              "rir": "2",
+              "progressione": false,
+              "note": "Femorali."
+            },
+            {
+              "nome": "Hip thrust macchina o bilanciere",
+              "gruppo": "Glutei",
+              "serie": 3,
+              "ripetizioni": "10–12",
+              "peso": "—",
+              "recupero": "90 sec",
+              "rir": "2",
+              "progressione": false,
+              "note": "Glutei."
+            },
+            {
+              "nome": "Leg extension leggero",
+              "gruppo": "Quadricipiti",
+              "serie": 2,
+              "ripetizioni": "12–15",
+              "peso": "—",
+              "recupero": "75 sec",
+              "rir": "2",
+              "progressione": false,
+              "note": "Quad."
+            },
+            {
+              "nome": "Curl bilanciere EZ",
+              "gruppo": "Bicipiti",
+              "serie": 3,
+              "ripetizioni": "8",
+              "peso": "—",
+              "recupero": "75 sec",
+              "rir": "1–2",
+              "progressione": false,
+              "note": "3×8 bicipiti."
+            }
           ]
         },
         "cb": {
-          "nome": "CB · Tirata + spinta + gambe minime",
+          "nome": "CB · Parte alta completa B",
           "codice": "CB",
           "giorno": "Sabato",
           "quotaVolume": "40%",
-          "notaSeduta": "Seduta più ricca della settimana. Volume massimo sul busto.",
-          "durataMinuti": { "obiettivo": 60, "tetto": 60 },
+          "accoppiamento": "Petto · schiena · spalle · braccia",
+          "notaSeduta": "Volume massimo busto — 40% settimana.",
+          "durataMinuti": {
+            "obiettivo": 60,
+            "tetto": 60
+          },
           "esercizi": [
-            { "nome": "Rematore bilanciere prona", "gruppo": "Dorsali", "serie": 4, "ripetizioni": "8–10", "peso": "—", "recupero": "150 sec", "rir": "1–2", "progressione": true, "note": "Volume schiena." },
-            { "nome": "Panca inclinata manubri 25°", "gruppo": "Petto alto", "serie": 4, "ripetizioni": "8–10", "peso": "—", "recupero": "120 sec", "rir": "1–2", "progressione": false, "note": "+1 serie petto alto." },
-            { "nome": "Arnold press manubri seduto", "gruppo": "Deltoide", "serie": 3, "ripetizioni": "8–10", "peso": "—", "recupero": "120 sec", "rir": "1–2", "progressione": false, "note": "Spalle." },
-            { "nome": "Curl martello manubri", "gruppo": "Bicipiti", "serie": 3, "ripetizioni": "10–12", "peso": "—", "recupero": "60 sec", "rir": "1", "progressione": false, "note": "Braccia." },
-            { "nome": "French press bilanciere EZ", "gruppo": "Tricipiti", "serie": 3, "ripetizioni": "10–12", "peso": "—", "recupero": "75 sec", "rir": "1", "progressione": false, "note": "Tricipiti." },
-            { "nome": "Leg curl seduto", "gruppo": "Femorali", "serie": 2, "ripetizioni": "12", "peso": "—", "recupero": "75 sec", "rir": "2", "progressione": false, "note": "Mantenimento." },
-            { "nome": "Abductor machine", "gruppo": "Glutei", "serie": 2, "ripetizioni": "15", "peso": "—", "recupero": "60 sec", "rir": "2", "progressione": false, "note": "Mantenimento." }
+            {
+              "nome": "Rematore bilanciere prona",
+              "gruppo": "Dorsali",
+              "serie": 4,
+              "ripetizioni": "8–10",
+              "peso": "—",
+              "recupero": "150 sec",
+              "rir": "1–2",
+              "progressione": true,
+              "note": "Volume schiena."
+            },
+            {
+              "nome": "Lat machine presa larga",
+              "gruppo": "Dorsali",
+              "serie": 3,
+              "ripetizioni": "10–12",
+              "peso": "—",
+              "recupero": "120 sec",
+              "rir": "1–2",
+              "progressione": false,
+              "note": "Dorsali."
+            },
+            {
+              "nome": "Panca piana manubri",
+              "gruppo": "Petto",
+              "serie": 4,
+              "ripetizioni": "8–10",
+              "peso": "—",
+              "recupero": "120 sec",
+              "rir": "1–2",
+              "progressione": false,
+              "note": "+1 serie petto."
+            },
+            {
+              "nome": "Arnold press manubri seduto",
+              "gruppo": "Deltoide",
+              "serie": 3,
+              "ripetizioni": "8–10",
+              "peso": "—",
+              "recupero": "120 sec",
+              "rir": "1–2",
+              "progressione": false,
+              "note": "Spalle."
+            },
+            {
+              "nome": "Alzate posteriori manubri",
+              "gruppo": "Deltoide posteriore",
+              "serie": 3,
+              "ripetizioni": "12–15",
+              "peso": "—",
+              "recupero": "60 sec",
+              "rir": "1",
+              "progressione": false,
+              "note": "Posteriori."
+            },
+            {
+              "nome": "French press bilanciere EZ",
+              "gruppo": "Tricipiti",
+              "serie": 3,
+              "ripetizioni": "10–12",
+              "peso": "—",
+              "recupero": "75 sec",
+              "rir": "1",
+              "progressione": false,
+              "note": "Tricipiti."
+            },
+            {
+              "nome": "Curl inclinato manubri",
+              "gruppo": "Bicipiti",
+              "serie": 3,
+              "ripetizioni": "10–12",
+              "peso": "—",
+              "recupero": "60 sec",
+              "rir": "1",
+              "progressione": false,
+              "note": "Bicipiti."
+            },
+            {
+              "nome": "Croci ai cavi alti",
+              "gruppo": "Petto",
+              "serie": 3,
+              "ripetizioni": "12–15",
+              "peso": "—",
+              "recupero": "60 sec",
+              "rir": "1",
+              "progressione": false,
+              "note": "+1 serie finisher petto."
+            }
           ]
         }
       }
@@ -408,7 +925,11 @@
       "inizio": "2027-06-07",
       "fine": "2027-08-31",
       "settimane": 13,
-      "giorni": ["Lunedì AB", "Mercoledì AC", "Sabato CB"],
+      "giorni": [
+        "Lunedì AB",
+        "Mercoledì AC",
+        "Sabato CB"
+      ],
       "rir": "RIR 2–3",
       "obiettivo": "Chiudere l’anno integro. Stessi esercizi, intensità moderata, niente cedimento. Max 55 min.",
       "perche": "Estate e possibile pausa parziale da studente: mantieni il busto senza accumulare fatica.",
@@ -417,54 +938,280 @@
         "recupero": "Recuperi leggermente più corti — seduta più facile",
         "durataSeduta": "45–55 min",
         "deload": "settimana 13 · −40% volume",
-        "split": "Lun AB 35% · Mer AC 25% · Sab CB 40%"
+        "split": "Lun AB 35% parte alta · Mer AC gambe + bicipiti · Sab CB 40% parte alta"
       },
       "sessioni": {
         "ab": {
-          "nome": "AB · Spinta + gambe brevi",
+          "nome": "AB · Parte alta completa A",
           "codice": "AB",
           "giorno": "Lunedì",
           "quotaVolume": "35%",
-          "notaSeduta": "Lavoro moderato. Focus qualità, non record.",
-          "durataMinuti": { "obiettivo": 48, "tetto": 55 },
+          "accoppiamento": "Petto · schiena · spalle · braccia",
+          "notaSeduta": "Parte alta moderata — chiudere l'anno integri.",
+          "durataMinuti": {
+            "obiettivo": 48,
+            "tetto": 55
+          },
           "esercizi": [
-            { "nome": "Panca piana bilanciere", "gruppo": "Petto", "serie": 3, "ripetizioni": "10–12", "peso": "—", "recupero": "120 sec", "rir": "2–3", "progressione": false, "note": "Carico moderato, serie pulite." },
-            { "nome": "Dip alle parallele", "gruppo": "Petto / tricipiti", "serie": 2, "ripetizioni": "10–12", "peso": "—", "recupero": "90 sec", "rir": "2–3", "progressione": false, "note": "Corpo libero o assistiti." },
-            { "nome": "Alzate laterali manubri", "gruppo": "Deltoide laterale", "serie": 3, "ripetizioni": "15", "peso": "—", "recupero": "60 sec", "rir": "2", "progressione": false, "note": "Pump leggero." },
-            { "nome": "Pushdown corda al cavo", "gruppo": "Tricipiti", "serie": 2, "ripetizioni": "15", "peso": "—", "recupero": "60 sec", "rir": "2", "progressione": false, "note": "Finisher." },
-            { "nome": "Hack squat o pressa 45°", "gruppo": "Quadricipiti", "serie": 2, "ripetizioni": "12", "peso": "—", "recupero": "90 sec", "rir": "3", "progressione": false, "note": "Mantenimento." },
-            { "nome": "Polpacci alla pressa", "gruppo": "Polpacci", "serie": 2, "ripetizioni": "15", "peso": "—", "recupero": "60 sec", "rir": "2", "progressione": false, "note": "Mantenimento." }
+            {
+              "nome": "Panca piana bilanciere",
+              "gruppo": "Petto",
+              "serie": 3,
+              "ripetizioni": "10–12",
+              "peso": "—",
+              "recupero": "120 sec",
+              "rir": "2–3",
+              "progressione": false,
+              "note": "Moderato, niente cedimento."
+            },
+            {
+              "nome": "Trazioni presa neutra",
+              "gruppo": "Dorsali",
+              "serie": 3,
+              "ripetizioni": "8–10",
+              "peso": "—",
+              "recupero": "120 sec",
+              "rir": "2–3",
+              "progressione": false,
+              "note": "Moderato."
+            },
+            {
+              "nome": "Panca inclinata manubri 25°",
+              "gruppo": "Petto alto",
+              "serie": 3,
+              "ripetizioni": "10–12",
+              "peso": "—",
+              "recupero": "120 sec",
+              "rir": "2–3",
+              "progressione": false,
+              "note": "Petto alto."
+            },
+            {
+              "nome": "Alzate laterali manubri",
+              "gruppo": "Deltoide laterale",
+              "serie": 3,
+              "ripetizioni": "15",
+              "peso": "—",
+              "recupero": "60 sec",
+              "rir": "2",
+              "progressione": false,
+              "note": "Spalle."
+            },
+            {
+              "nome": "Face pull al cavo",
+              "gruppo": "Deltoide posteriore",
+              "serie": 2,
+              "ripetizioni": "15",
+              "peso": "—",
+              "recupero": "60 sec",
+              "rir": "2",
+              "progressione": false,
+              "note": "Posteriori."
+            },
+            {
+              "nome": "Dip alle parallele",
+              "gruppo": "Petto / tricipiti",
+              "serie": 2,
+              "ripetizioni": "10–12",
+              "peso": "—",
+              "recupero": "90 sec",
+              "rir": "2–3",
+              "progressione": false,
+              "note": "Corpo libero o assistiti."
+            },
+            {
+              "nome": "Pushdown corda al cavo",
+              "gruppo": "Tricipiti",
+              "serie": 2,
+              "ripetizioni": "15",
+              "peso": "—",
+              "recupero": "60 sec",
+              "rir": "2",
+              "progressione": false,
+              "note": "Tricipiti."
+            },
+            {
+              "nome": "Curl martello manubri",
+              "gruppo": "Bicipiti",
+              "serie": 2,
+              "ripetizioni": "12",
+              "peso": "—",
+              "recupero": "60 sec",
+              "rir": "2",
+              "progressione": false,
+              "note": "Bicipiti."
+            }
           ]
         },
         "ac": {
-          "nome": "AC · Tirata + braccia",
+          "nome": "AC · Gambe + bicipiti",
           "codice": "AC",
           "giorno": "Mercoledì",
           "quotaVolume": "25%",
-          "notaSeduta": "Tirata leggera e braccia. Seduta breve.",
-          "durataMinuti": { "obiettivo": 38, "tetto": 45 },
+          "accoppiamento": "Gambe generali · bicipiti 3×8",
+          "notaSeduta": "Gambe leggere + bicipiti 3×8. Breve.",
+          "durataMinuti": {
+            "obiettivo": 35,
+            "tetto": 40
+          },
           "esercizi": [
-            { "nome": "Trazioni presa neutra", "gruppo": "Dorsali", "serie": 3, "ripetizioni": "8–10", "peso": "—", "recupero": "120 sec", "rir": "2–3", "progressione": false, "note": "Moderato." },
-            { "nome": "Rematore manubrio su panca", "gruppo": "Dorsali", "serie": 3, "ripetizioni": "10–12 per lato", "peso": "—", "recupero": "90 sec", "rir": "2–3", "progressione": false, "note": "Moderato." },
-            { "nome": "Face pull al cavo", "gruppo": "Deltoide posteriore", "serie": 2, "ripetizioni": "15", "peso": "—", "recupero": "60 sec", "rir": "2", "progressione": false, "note": "Posteriori spalla." },
-            { "nome": "Curl inclinato manubri", "gruppo": "Bicipiti", "serie": 2, "ripetizioni": "12", "peso": "—", "recupero": "60 sec", "rir": "2", "progressione": false, "note": "Bicipiti." }
+            {
+              "nome": "Hack squat o pressa 45°",
+              "gruppo": "Quadricipiti",
+              "serie": 3,
+              "ripetizioni": "12",
+              "peso": "—",
+              "recupero": "120 sec",
+              "rir": "3",
+              "progressione": false,
+              "note": "Gambe leggere."
+            },
+            {
+              "nome": "Leg curl seduto",
+              "gruppo": "Femorali",
+              "serie": 3,
+              "ripetizioni": "12",
+              "peso": "—",
+              "recupero": "90 sec",
+              "rir": "3",
+              "progressione": false,
+              "note": "Femorali."
+            },
+            {
+              "nome": "Hip thrust macchina o bilanciere",
+              "gruppo": "Glutei",
+              "serie": 2,
+              "ripetizioni": "12",
+              "peso": "—",
+              "recupero": "90 sec",
+              "rir": "3",
+              "progressione": false,
+              "note": "Glutei."
+            },
+            {
+              "nome": "Leg extension leggero",
+              "gruppo": "Quadricipiti",
+              "serie": 2,
+              "ripetizioni": "15",
+              "peso": "—",
+              "recupero": "75 sec",
+              "rir": "3",
+              "progressione": false,
+              "note": "Quad."
+            },
+            {
+              "nome": "Curl bilanciere EZ",
+              "gruppo": "Bicipiti",
+              "serie": 3,
+              "ripetizioni": "8",
+              "peso": "—",
+              "recupero": "75 sec",
+              "rir": "2",
+              "progressione": false,
+              "note": "3×8 bicipiti — seduta breve post-lezioni."
+            }
           ]
         },
         "cb": {
-          "nome": "CB · Tirata + spinta + gambe minime",
+          "nome": "CB · Parte alta completa B",
           "codice": "CB",
           "giorno": "Sabato",
           "quotaVolume": "40%",
-          "notaSeduta": "Weekend: lavoro completo ma senza spingere al limite.",
-          "durataMinuti": { "obiettivo": 52, "tetto": 55 },
+          "accoppiamento": "Petto · schiena · spalle · braccia",
+          "notaSeduta": "Parte alta completa senza spingere al limite.",
+          "durataMinuti": {
+            "obiettivo": 52,
+            "tetto": 55
+          },
           "esercizi": [
-            { "nome": "Rematore bilanciere prona", "gruppo": "Dorsali", "serie": 3, "ripetizioni": "10–12", "peso": "—", "recupero": "120 sec", "rir": "2–3", "progressione": false, "note": "Moderato." },
-            { "nome": "Panca inclinata manubri 25°", "gruppo": "Petto alto", "serie": 3, "ripetizioni": "10–12", "peso": "—", "recupero": "120 sec", "rir": "2–3", "progressione": false, "note": "Moderato." },
-            { "nome": "Arnold press manubri seduto", "gruppo": "Deltoide", "serie": 2, "ripetizioni": "10", "peso": "—", "recupero": "90 sec", "rir": "2–3", "progressione": false, "note": "Spalle." },
-            { "nome": "Curl martello manubri", "gruppo": "Bicipiti", "serie": 2, "ripetizioni": "12", "peso": "—", "recupero": "60 sec", "rir": "2", "progressione": false, "note": "Braccia." },
-            { "nome": "French press bilanciere EZ", "gruppo": "Tricipiti", "serie": 2, "ripetizioni": "12", "peso": "—", "recupero": "75 sec", "rir": "2", "progressione": false, "note": "Tricipiti." },
-            { "nome": "Leg curl seduto", "gruppo": "Femorali", "serie": 2, "ripetizioni": "12", "peso": "—", "recupero": "75 sec", "rir": "3", "progressione": false, "note": "Mantenimento." },
-            { "nome": "Abductor machine", "gruppo": "Glutei", "serie": 2, "ripetizioni": "15", "peso": "—", "recupero": "60 sec", "rir": "3", "progressione": false, "note": "Mantenimento." }
+            {
+              "nome": "Rematore bilanciere prona",
+              "gruppo": "Dorsali",
+              "serie": 3,
+              "ripetizioni": "10–12",
+              "peso": "—",
+              "recupero": "120 sec",
+              "rir": "2–3",
+              "progressione": false,
+              "note": "Moderato."
+            },
+            {
+              "nome": "Lat machine presa larga",
+              "gruppo": "Dorsali",
+              "serie": 3,
+              "ripetizioni": "10–12",
+              "peso": "—",
+              "recupero": "120 sec",
+              "rir": "2–3",
+              "progressione": false,
+              "note": "Dorsali."
+            },
+            {
+              "nome": "Panca piana manubri",
+              "gruppo": "Petto",
+              "serie": 3,
+              "ripetizioni": "10–12",
+              "peso": "—",
+              "recupero": "120 sec",
+              "rir": "2–3",
+              "progressione": false,
+              "note": "Petto."
+            },
+            {
+              "nome": "Arnold press manubri seduto",
+              "gruppo": "Deltoide",
+              "serie": 2,
+              "ripetizioni": "10",
+              "peso": "—",
+              "recupero": "90 sec",
+              "rir": "2–3",
+              "progressione": false,
+              "note": "Spalle."
+            },
+            {
+              "nome": "Alzate posteriori manubri",
+              "gruppo": "Deltoide posteriore",
+              "serie": 2,
+              "ripetizioni": "15",
+              "peso": "—",
+              "recupero": "60 sec",
+              "rir": "2",
+              "progressione": false,
+              "note": "Posteriori."
+            },
+            {
+              "nome": "French press bilanciere EZ",
+              "gruppo": "Tricipiti",
+              "serie": 2,
+              "ripetizioni": "12",
+              "peso": "—",
+              "recupero": "75 sec",
+              "rir": "2",
+              "progressione": false,
+              "note": "Tricipiti."
+            },
+            {
+              "nome": "Curl inclinato manubri",
+              "gruppo": "Bicipiti",
+              "serie": 2,
+              "ripetizioni": "12",
+              "peso": "—",
+              "recupero": "60 sec",
+              "rir": "2",
+              "progressione": false,
+              "note": "Bicipiti."
+            },
+            {
+              "nome": "Croci ai cavi alti",
+              "gruppo": "Petto",
+              "serie": 2,
+              "ripetizioni": "15",
+              "peso": "—",
+              "recupero": "60 sec",
+              "rir": "2",
+              "progressione": false,
+              "note": "Petto."
+            }
           ]
         }
       }

@@ -44,11 +44,11 @@
     box.appendChild(el("h3", { text: "Come è costruita la settimana" }));
     var ul = el("ul", { className: "ciclo-principi__list" });
     [
-      "3 allenamenti: Lun AB (35%) · Mer AC (25%) · Sab CB (40%). Studente: mercoledì seduta corta.",
-      "AB – AC / C–B: macro-zone A (spinta), C (tirata), B (gambe). Stessi esercizi per tutta la fase.",
-      "Priorità parte alta ~70% delle serie. Gambe, glutei e polpacci: solo mantenimento (già sviluppati).",
-      "Fase 1 (mesi 1–3): progressivo 45→55 min, RIR 3→1, focus tecnica. Dal mese 4: max 60 min.",
-      "Ogni fase = 13 settimane. Settimana 13 = deload obbligatorio (−40% volume).",
+      "3 allenamenti: Lun AB (35%) · Mer AC (25%) · Sab CB (40%). Mercoledì = seduta breve post-lezioni.",
+      "Lunedì e sabato: parte alta completa (petto, schiena, spalle, braccia) — tutti i muscoli del busto, zero gambe.",
+      "Mercoledì: richiamo gambe generali (quad, femorali, glutei). Nessun polpaccio. Bicipiti fissi 3×8.",
+      "Priorità ~75% serie sul busto. Stessi esercizi per tutta la fase; cambiano serie, rep, RIR.",
+      "Fase 1: 45→55 min parte alta · Mer ~35 min. Dal mese 4: max 60 min (Lun/Sab). Deload sett. 13.",
       "Esercizi scelti ad hoc per Nicola — non copiati da altri atleti."
     ].forEach(function (t) {
       ul.appendChild(el("li", { text: t }));

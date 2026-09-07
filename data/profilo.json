@@ -7,14 +7,14 @@
   "braccio_cm": 30,
   "livello": "principiante-intermedio",
   "allenamenti_settimana": 3,
-  "obiettivo": "Sviluppare petto, schiena, spalle e braccia (~70% del volume). Gambe, glutei e polpacci già molto avanzati: solo mantenimento.",
+  "obiettivo": "Sviluppare petto, schiena, spalle e braccia (~75% del volume). Gambe solo richiamo mercoledì. Polpacci esclusi.",
   "attrezzatura": "palestra commerciale",
   "limitazioni": "Studente con poco tempo. Priorità recupero e tecnica. Non inseguire il cedimento sui fondamentali nelle prime 12 settimane.",
   "durata_seduta_min": 50,
   "giorni": {
-    "lunedi": { "scheda": "AB", "quota": "35%" },
-    "mercoledi": { "scheda": "AC", "quota": "25%" },
-    "sabato": { "scheda": "CB", "quota": "40%" }
+    "lunedi": { "scheda": "AB", "quota": "35%", "focus": "parte alta completa" },
+    "mercoledi": { "scheda": "AC", "quota": "25%", "focus": "gambe generali + bicipiti 3×8" },
+    "sabato": { "scheda": "CB", "quota": "40%", "focus": "parte alta completa" }
   },
   "note": "Riferimento estetico illustrativo (non foto reale dell'atleta). Schede con esercizi scelti ad hoc per il profilo di Nicola."
 }
