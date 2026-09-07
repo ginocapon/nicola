@@ -6,7 +6,7 @@
 
 <meta charset="UTF-8">
 
-<script>(function(){var p=location.pathname,i=p.indexOf("/admin/"),b=i>0?p.slice(0,i):/^\/nicola(\/|$)/i.test(p)?"/nicola":"";window.FQ_BASE=b;window.fqUrl=function(u){if(!u)return b||"/";if(u.charAt(0)!=="/")u="/"+u;return b+u;};if(b&&!document.querySelector("base[data-fq-base]")){var e=document.createElement("base");e.href=b+"/";e.setAttribute("data-fq-base","1");document.head.insertBefore(e,document.head.firstChild);}})();</script>
+<script>(function(){var p=location.pathname,i=p.indexOf("/admin/"),b="";if(i>0)b=p.slice(0,i);else if(/^\/nicola(\/|$)/i.test(p))b="/nicola";window.FQ_BASE=b;window.fqUrl=function(u){if(!u)return(b||"")+"/";if(u.charAt(0)!=="/")u="/"+u;return b+u;};var bh=(b||"")+"/";if(!document.querySelector("base[data-fq-base]")){var e=document.createElement("base");e.href=bh;e.setAttribute("data-fq-base","1");document.head.insertBefore(e,document.head.firstChild);}})();</script>
 
 <meta http-equiv="refresh" content="0;url=admin/prototipi/periodizzazione/fase/?fase=ipertrofia-accumulo">
 
