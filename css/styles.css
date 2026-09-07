@@ -1,0 +1,126 @@
+:root {
+  --bg: #0c0c0c;
+  --surface: #161616;
+  --surface-2: #1f1f1f;
+  --text: #f4efe6;
+  --muted: #a39a90;
+  --accent: #c9783a;
+  --accent-soft: #f0c090;
+  --line: rgba(244, 239, 230, 0.28);
+  --line-strong: rgba(201, 120, 58, 0.45);
+  --max: 1120px;
+  --radius: 14px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --panel-shadow: 0 14px 34px rgba(0, 0, 0, 0.45);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; color-scheme: dark; }
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--accent-soft); }
+a:hover { color: var(--accent); }
+.wrap { width: min(100% - 2rem, var(--max)); margin-inline: auto; }
+.skip-link {
+  position: absolute; left: -9999px; top: 0; z-index: 9999;
+  background: var(--accent); color: #1a120e; padding: 0.75rem 1rem;
+}
+.skip-link:focus { left: 0.75rem; top: 0.75rem; }
+
+.site-header {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(12, 12, 12, 0.9);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(10px);
+}
+.site-header .wrap {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.85rem 0; gap: 1rem;
+}
+.logo {
+  color: inherit; text-decoration: none;
+  display: flex; flex-direction: column; gap: 0.1rem;
+}
+.logo small {
+  font-size: 0.72rem; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--muted);
+}
+.site-nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 0.35rem; }
+.site-nav a {
+  color: var(--muted); text-decoration: none;
+  padding: 0.4rem 0.75rem; border-radius: 999px;
+}
+.site-nav a[aria-current="page"], .site-nav a:hover {
+  color: var(--text); background: rgba(201, 120, 58, 0.15);
+}
+
+.section { padding: 1.5rem 0; }
+.panel-raised {
+  background: linear-gradient(168deg, #211d19, #100f0e);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  box-shadow: var(--panel-shadow);
+}
+.tagline {
+  margin: 0 0 0.35rem; color: var(--accent);
+  font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase;
+}
+h1, h2, h3 { letter-spacing: -0.02em; line-height: 1.2; }
+h1 { margin: 0 0 0.75rem; font-size: clamp(1.8rem, 4vw, 2.5rem); }
+h2 { margin: 0 0 0.75rem; font-size: 1.35rem; }
+h3 { margin: 0 0 0.5rem; font-size: 1.1rem; }
+
+.atleta-hero {
+  display: grid; gap: 1.5rem; padding: 1.25rem;
+}
+@media (min-width: 800px) {
+  .atleta-hero { grid-template-columns: 0.85fr 1.15fr; padding: 1.5rem; align-items: start; }
+}
+.atleta-hero__photo { margin: 0; position: relative; }
+.atleta-hero__photo img {
+  border-radius: 12px; width: 100%; max-height: 520px; object-fit: cover;
+}
+.ai-photo-mark {
+  position: absolute; top: 0.75rem; right: 0.75rem;
+  background: rgba(0,0,0,0.75); color: #fff;
+  font-size: 0.72rem; padding: 0.25rem 0.5rem; border-radius: 4px;
+}
+.fig-credit {
+  margin: 0.5rem 0 0; font-size: 0.82rem; color: var(--muted);
+}
+.atleta-dl {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0.65rem 1rem;
+  margin: 1rem 0;
+}
+.atleta-dl dt { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.atleta-dl dd { margin: 0.15rem 0 0; font-weight: 600; }
+.atleta-hero__note { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 0.65rem 1rem; border-radius: 999px;
+  font: inherit; font-weight: 600; text-decoration: none; cursor: pointer;
+  border: 1px solid transparent;
+}
+.btn-primary { background: var(--accent); color: #1a120e; }
+.btn-primary:hover { filter: brightness(1.06); color: #1a120e; }
+.btn-ghost { background: transparent; color: var(--text); border-color: var(--line-strong); }
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 1.25rem 0 2rem; color: var(--muted); font-size: 0.9rem;
+}
+.status.error { color: #d97868; }
+
+@media print {
+  .site-header, .site-footer, .no-print, .skip-link, .admin-session-actions, .admin-session-nav, .admin-breadcrumb { display: none !important; }
+  body { background: #fff; color: #111; font-size: 11pt; }
+  .panel-raised { box-shadow: none; border: 1px solid #ccc; }
+}

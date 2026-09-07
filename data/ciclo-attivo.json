@@ -1,0 +1,19 @@
+{
+  "nome": "Ciclo 1 · Ipertrofia + tecnica",
+  "settimane": 13,
+  "fase": "ipertrofia-accumulo",
+  "split": "3 giorni: Lun AB (35%) · Mer AC (25%) · Sab CB (40%)",
+  "inizio": "2026-09-08",
+  "fine": "2026-12-07",
+  "progressione": "Settimane 1–4: RIR 3–2, 45 min, impara i movimenti. Settimane 5–8: RIR 2, 50 min. Settimane 9–12: RIR 1–2, 55 min. Settimana 13: deload −40% volume.",
+  "settimana_tipo": [
+    { "giorno": "Lunedì", "scheda_id": "ab", "focus": "Spinta petto/spalle + gambe brevi (35%)" },
+    { "giorno": "Martedì", "scheda_id": null, "focus": "Riposo / mobilità spalle" },
+    { "giorno": "Mercoledì", "scheda_id": "ac", "focus": "Tirata + braccia (25% — seduta corta)" },
+    { "giorno": "Giovedì", "scheda_id": null, "focus": "Riposo / studio" },
+    { "giorno": "Venerdì", "scheda_id": null, "focus": "Riposo" },
+    { "giorno": "Sabato", "scheda_id": "cb", "focus": "Schiena + petto inclinato + braccia (40%)" },
+    { "giorno": "Domenica", "scheda_id": null, "focus": "Riposo" }
+  ],
+  "note": "Dal 4° mese (fase 2) le sedute restano entro 60 minuti. Gambe sempre volume minimo: Nicola ha già muscolatura inferiore molto sviluppata."
+}
