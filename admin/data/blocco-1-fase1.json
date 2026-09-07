@@ -102,6 +102,8 @@
     "ab": {
       "codice": "AB",
       "nome": "Spinta + gambe brevi",
+      "giorno": "Lunedì",
+      "quotaVolume": "35%",
       "accoppiamento": "A + B",
       "notaSeduta": "Lunedì · 35% volume. Petto, spalle, tricipiti + 2 esercizi gambe mantenimento.",
       "durataMinuti": { "obiettivo": 48, "tetto": 55 },
@@ -117,6 +119,8 @@
     "ac": {
       "codice": "AC",
       "nome": "Tirata + braccia",
+      "giorno": "Mercoledì",
+      "quotaVolume": "25%",
       "accoppiamento": "C",
       "notaSeduta": "Mercoledì · 25% volume. Seduta corta post-lezioni.",
       "durataMinuti": { "obiettivo": 38, "tetto": 45 },
@@ -130,6 +134,8 @@
     "cb": {
       "codice": "CB",
       "nome": "Schiena + petto + braccia",
+      "giorno": "Sabato",
+      "quotaVolume": "40%",
       "accoppiamento": "C + A + B",
       "notaSeduta": "Sabato · 40% volume. Seduta principale del weekend.",
       "durataMinuti": { "obiettivo": 52, "tetto": 58 },

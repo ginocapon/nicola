@@ -208,7 +208,7 @@
     actions.innerHTML =
       "<a class=\"btn btn-primary\" href=\"/admin/metodo-blocco1/pdf/\">PDF metodo blocco</a>" +
       "<a class=\"btn btn-primary\" href=\"/admin/sessione/pdf/?ciclo=" + encodeURIComponent(blocco.id) + "&sessione=" + sessionKey + querySuffix() + "\" target=\"_blank\">Stampa scheda con spiegazioni</a>" +
-      "<a class=\"btn btn-ghost\" href=\"/admin/prototipi/periodizzazione/fase/?fase=" + encodeURIComponent(blocco.id) + "\" target=\"_blank\">PDF fase completa AB–CB</a>" +
+      "<a class=\"btn btn-ghost\" href=\"/admin/prototipi/periodizzazione/fase/?anno=2026-2027&fase=" + encodeURIComponent(blocco.id) + "\" target=\"_blank\">PDF fase completa AB–CB</a>" +
       "<a class=\"btn btn-ghost\" href=\"/admin/mappa-esercizi/\">Mappa esercizi</a>";
     root.appendChild(actions);
 
