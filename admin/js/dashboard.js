@@ -102,12 +102,12 @@
       head.innerHTML =
         "<span class=\"admin-fase__num\">Fase " + (i + 1) + "</span>" +
         "<h3>" + fase.nome.replace(/^Fase \d+ · /, "") + "</h3>" +
-        "<p class=\"admin-fase__date\">" + formatDate(fase.inizio) + " – " + formatDate(fase.fine) +
+        "<p class=\"admin-fase__dates\">" + formatDate(fase.inizio) + " – " + formatDate(fase.fine) +
         " · " + fase.settimane + " settimane</p>";
       block.appendChild(head);
       block.appendChild(renderIr(fase));
 
-      var grid = el("div", { className: "admin-sessioni-grid" });
+      var grid = el("div", { className: "admin-sessioni-grid admin-sessioni-grid--3" });
       SESSIONI.forEach(function (key) {
         var s = fase.sessioni[key];
         if (!s) return;
@@ -129,7 +129,7 @@
           href: u("/admin/sessione/pdf/?ciclo=" + encodeURIComponent(fase.id) + "&sessione=" + key),
           target: "_blank",
           rel: "noopener",
-          text: "PDF"
+          text: "Scarica PDF"
         }));
         wrap.appendChild(actions);
         grid.appendChild(wrap);

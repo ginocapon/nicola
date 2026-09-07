@@ -1,5 +1,5 @@
 /**
- * Pagina sessione — scheda Nicola
+ * Pagina sessione — scheda Nicola (layout come Michele-allenamenti)
  */
 (function () {
   "use strict";
@@ -52,21 +52,21 @@
     document.title = sessionKey.toUpperCase() + " · " + fase.nome + " | Nicola";
 
     var nav = el("nav", { className: "admin-breadcrumb" });
-    nav.innerHTML = '<a href="' + u("/") + '">Ciclo</a> · <span>' + sessionKey.toUpperCase() + "</span>";
+    nav.innerHTML = '<a href="' + u("/") + '">Ciclo</a> · <strong>' + sessionKey.toUpperCase() + "</strong>";
     root.appendChild(nav);
 
     var head = el("header", { className: "admin-session-head" });
     var ir = fase.intensitaRecupero || {};
+    var lead = (fase.perche ? fase.perche + " " : "") + (s.notaSeduta || fase.obiettivo || "");
     head.innerHTML =
-      "<p class=\"session-meta\">" + formatDate(fase.inizio) + " – " + formatDate(fase.fine) +
+      "<p class=\"tagline\">" + formatDate(fase.inizio) + " – " + formatDate(fase.fine) +
       " · " + (s.giorno || "") + " · " + (s.quotaVolume || "") + "</p>" +
       "<h1>" + sessionKey.toUpperCase() + " — " + s.nome + "</h1>" +
-      "<p class=\"session-lead\">" + (s.notaSeduta || fase.obiettivo || "") + "</p>";
+      "<p class=\"lead\">" + lead + "</p>";
     root.appendChild(head);
 
-    if (fase.perche || ir.intensita) {
+    if (ir.intensita || ir.recupero || ir.durataSeduta) {
       var irBox = el("aside", { className: "admin-fase__ir" });
-      if (fase.perche) irBox.appendChild(el("p", { html: "<strong>A cosa serve.</strong> " + fase.perche }));
       if (ir.intensita) irBox.appendChild(el("p", { html: "<strong>Intensità.</strong> " + ir.intensita }));
       if (ir.recupero) irBox.appendChild(el("p", { html: "<strong>Recupero.</strong> " + ir.recupero }));
       if (ir.durataSeduta) irBox.appendChild(el("p", { html: "<strong>Durata.</strong> " + ir.durataSeduta }));
@@ -77,47 +77,35 @@
     actions.innerHTML =
       '<a class="btn btn-primary" href="' +
       u("/admin/sessione/pdf/?ciclo=" + encodeURIComponent(faseId) + "&sessione=" + sessionKey) +
-      '" target="_blank" rel="noopener">Scarica PDF</a>' +
-      '<button type="button" class="btn btn-ghost" onclick="window.print()">Stampa pagina</button>';
+      '" target="_blank" rel="noopener">PDF scheda</a>';
     root.appendChild(actions);
 
-    var cards = el("div", { className: "exercise-list" });
-    s.esercizi.forEach(function (ex, i) {
-      var card = el("article", { className: "exercise-card" + (ex.progressione ? " exercise-card--prog" : "") });
-      card.innerHTML =
-        "<div class=\"exercise-card__num\">" + (i + 1) + (ex.progressione ? " *" : "") + "</div>" +
-        "<div class=\"exercise-card__body\">" +
-        "<h3>" + ex.nome + "</h3>" +
-        "<p class=\"exercise-card__gruppo\">" + ex.gruppo + "</p>" +
-        "<div class=\"exercise-card__params\">" +
-        "<span><strong>Serie×Rep</strong> " + ex.serie + "×" + ex.ripetizioni + "</span>" +
-        "<span><strong>Recupero</strong> " + (ex.recupero || "—") + "</span>" +
-        "<span><strong>RIR</strong> " + (ex.rir || "—") + "</span>" +
-        "<span><strong>Peso</strong> _______</span>" +
-        "</div>" +
-        (ex.note ? "<p class=\"exercise-card__note\">" + ex.note + "</p>" : "") +
-        "</div>";
-      cards.appendChild(card);
-    });
-    root.appendChild(cards);
-
-    var diario = el("section", { className: "admin-diario no-print" });
-    diario.innerHTML = "<h2>Log seduta</h2><p>Data: _______ · Durata: _______ · RPE medio: _______</p>";
     var tableWrap = el("div", { className: "table-wrap" });
-    var table = el("table", { className: "scheda-table" });
-    table.innerHTML = "<thead><tr><th>Esercizio</th><th>Kg</th><th>S1</th><th>S2</th><th>S3</th><th>S4</th><th>RIR</th></tr></thead>";
+    var table = el("table", { className: "scheda-table admin-session-table" });
+    table.innerHTML =
+      "<thead><tr><th>#</th><th>Esercizio</th><th>Gruppo</th><th>S×R</th><th>Peso</th><th>Rec</th><th>RIR</th><th>Note</th></tr></thead>";
     var tbody = el("tbody");
-    s.esercizi.forEach(function (ex) {
+    s.esercizi.forEach(function (ex, i) {
       var tr = el("tr");
+      if (ex.progressione) tr.className = "admin-row--prog";
       tr.innerHTML =
-        "<td>" + ex.nome + "</td><td></td><td></td><td></td><td></td>" +
-        "<td>" + (ex.serie >= 4 ? "" : "—") + "</td><td></td>";
+        "<td>" + (i + 1) + (ex.progressione ? " *" : "") + "</td>" +
+        "<td><strong>" + ex.nome + "</strong></td>" +
+        "<td>" + ex.gruppo + "</td>" +
+        "<td>" + ex.serie + "×" + ex.ripetizioni + "</td>" +
+        "<td class=\"admin-peso\">_______</td>" +
+        "<td>" + (ex.recupero || "—") + "</td>" +
+        "<td>" + (ex.rir || "—") + "</td>" +
+        "<td>" + (ex.note || "—") + "</td>";
       tbody.appendChild(tr);
     });
     table.appendChild(tbody);
     tableWrap.appendChild(table);
-    diario.appendChild(tableWrap);
-    root.appendChild(diario);
+    root.appendChild(tableWrap);
+
+    var logBox = el("aside", { className: "admin-log-box no-print" });
+    logBox.innerHTML = "<h2>Log seduta</h2><p>Data: _______ · Durata: _______ · RPE medio: _______</p>";
+    root.appendChild(logBox);
 
     var links = el("nav", { className: "admin-session-nav" });
     ["ab", "ac", "cb"].forEach(function (k) {
@@ -138,11 +126,14 @@
     var faseId = params.get("ciclo");
     var sessionKey = (params.get("sessione") || "ab").toLowerCase();
     if (!faseId) {
-      root.innerHTML = "<p>Parametro ciclo mancante. <a href=\"" + (window.fqUrl ? window.fqUrl("/") : "/") + "\">Torna al ciclo</a>.</p>";
+      root.innerHTML = "<p>Parametro <code>ciclo</code> mancante. <a href=\"" + u("/") + "\">Torna al ciclo</a>.</p>";
       return;
     }
     fetch(MACRO_URL)
-      .then(function (r) { return r.json(); })
+      .then(function (r) {
+        if (!r.ok) throw new Error("JSON " + r.status);
+        return r.json();
+      })
       .then(function (data) { renderSession(data, faseId, sessionKey, root); })
       .catch(function (err) { root.innerHTML = "<p class=\"status error\">Errore: " + err.message + "</p>"; });
   }

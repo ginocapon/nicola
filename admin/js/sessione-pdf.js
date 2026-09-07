@@ -1,5 +1,5 @@
 /**
- * PDF / stampa scheda sessione Nicola
+ * PDF scheda sessione Nicola — layout stampabile come Michele-allenamenti
  */
 (function () {
   "use strict";
@@ -44,12 +44,25 @@
     var n = Math.min(ex.serie || 4, 6);
     for (var s = 1; s <= n; s++) {
       var row = el("div", { className: "ex-pdf-log__set" });
-      row.innerHTML = "<span>S" + s + "</span> kg: _______ rep: _______";
+      row.innerHTML =
+        "<span>S" + s + "</span>" +
+        "<span class=\"ex-pdf-log__kg\">kg: _______</span>" +
+        "<span class=\"ex-pdf-log__set-line\"></span>" +
+        "<span>rep</span>";
       sets.appendChild(row);
     }
     log.appendChild(sets);
-    log.appendChild(el("div", { className: "ex-pdf-log__note", html: "Note: _________________________" }));
+    var note = el("div", { className: "ex-pdf-log__note" });
+    note.innerHTML = "Note<div class=\"ex-pdf-log__note-line\"></div>";
+    log.appendChild(note);
     return log;
+  }
+
+  function figureNum(i, ex) {
+    var wrap = el("div", { className: "ex-pdf-row__fig" });
+    wrap.innerHTML = "<span style=\"font-size:9pt;font-weight:700;color:#8b4513\">" +
+      (i + 1) + (ex.progressione ? "*" : "") + "</span>";
+    return wrap;
   }
 
   function renderPdf(data, faseId, sessionKey, root) {
@@ -60,57 +73,102 @@
     }
     var s = fase.sessioni[sessionKey];
     root.innerHTML = "";
-    document.title = "PDF · " + sessionKey.toUpperCase() + " · " + fase.nome;
+    document.title = "PDF · " + sessionKey.toUpperCase() + " · " + fase.nome + " | Nicola";
 
     var article = el("article", { className: "scheda-sessione-pdf" });
 
     var head = el("header", { className: "scheda-sessione-pdf__head" });
     head.innerHTML =
-      "<p class=\"pdf-kicker\">Scheda allenamento</p>" +
+      "<p class=\"scheda-sessione-pdf__brand\">Scheda allenamento</p>" +
       "<h1>" + sessionKey.toUpperCase() + " — " + s.nome + "</h1>" +
-      "<p class=\"pdf-meta\">" + fase.nome + " · " + formatDate(fase.inizio) + " – " + formatDate(fase.fine) + "</p>" +
-      "<p class=\"pdf-meta\">" + (s.giorno || "") + " · " + (s.quotaVolume || "") + " · RIR: " + (fase.rir || "—") + "</p>" +
-      "<p class=\"pdf-atleta\"><strong>Atleta:</strong> _______________</p>" +
-      (fase.perche ? "<p class=\"pdf-perche\">" + fase.perche + "</p>" : "");
+      "<div class=\"scheda-sessione-pdf__meta\">" +
+      "<span><span class=\"scheda-sessione-pdf__badge\">" + fase.nome + "</span></span>" +
+      "<span><strong>Periodo:</strong> " + formatDate(fase.inizio) + " – " + formatDate(fase.fine) + "</span>" +
+      "<span><strong>Settimane:</strong> " + fase.settimane + "</span>" +
+      "<span><strong>RIR:</strong> " + (fase.rir || "—") + "</span>" +
+      "<span><strong>Atleta:</strong> _______________</span>" +
+      "</div>" +
+      "<p class=\"scheda-sessione-pdf__obiettivo\">" + (fase.perche || fase.obiettivo || "") + "</p>";
     if (fase.intensitaRecupero) {
       var ir = fase.intensitaRecupero;
       head.innerHTML +=
-        "<p><strong>Intensità:</strong> " + (ir.intensita || "") + "</p>" +
-        "<p><strong>Recupero:</strong> " + (ir.recupero || "") + " · " + (ir.durataSeduta || "") + "</p>";
+        "<p class=\"scheda-sessione-pdf__obiettivo\"><strong>Intensità.</strong> " + (ir.intensita || "") + "</p>" +
+        "<p class=\"scheda-sessione-pdf__obiettivo\"><strong>Recupero.</strong> " + (ir.recupero || "") +
+        " · " + (ir.durataSeduta || "45–60 min") + "</p>";
     }
-    if (s.notaSeduta) head.innerHTML += "<p class=\"pdf-nota\">" + s.notaSeduta + "</p>";
+    if (s.notaSeduta) {
+      head.innerHTML += "<p class=\"scheda-sessione-pdf__obiettivo\">" + s.notaSeduta + "</p>";
+    }
+    if (s.giorno || s.quotaVolume) {
+      head.innerHTML += "<p class=\"scheda-sessione-pdf__obiettivo\">" +
+        (s.giorno || "") + (s.quotaVolume ? " · " + s.quotaVolume : "") + "</p>";
+    }
     article.appendChild(head);
 
-    article.appendChild(el("div", {
-      className: "scheda-sessione-pdf__session-bar",
-      html: "Data: ___/___/___ · Durata: _______ · RPE: ___"
-    }));
+    var oss = el("div", { className: "scheda-sessione-pdf__osservazioni" });
+    oss.innerHTML =
+      "<div class=\"scheda-sessione-pdf__osservazioni-label\">Osservazioni / note sessione</div>" +
+      "<div class=\"scheda-sessione-pdf__osservazioni-line\"></div>" +
+      "<div class=\"scheda-sessione-pdf__osservazioni-line\"></div>";
+    article.appendChild(oss);
+
+    var main = el("div", { className: "scheda-sessione-pdf__main" });
+    var sessionBar = el("div", { className: "scheda-sessione-pdf__session-bar" });
+    sessionBar.innerHTML =
+      "<span><strong>Data:</strong> ___/___/___</span>" +
+      "<span><strong>Durata:</strong> _______</span>" +
+      "<span><strong>RPE medio:</strong> ___</span>";
+    main.appendChild(sessionBar);
 
     s.esercizi.forEach(function (ex, i) {
       var row = el("div", { className: "ex-pdf-row" + (ex.progressione ? " ex-pdf-row--prog" : "") });
-      var body = el("div", { className: "ex-pdf-row__body" });
-      body.innerHTML =
-        "<p class=\"ex-pdf-row__num\">" + (i + 1) + (ex.progressione ? " *" : "") + "</p>" +
-        "<p class=\"ex-pdf-row__name\">" + ex.nome + (ex.progressione ? " · Progressione" : "") + "</p>" +
-        "<p class=\"ex-pdf-row__gruppo\">" + ex.gruppo + "</p>" +
-        "<p class=\"ex-pdf-row__params\">" + ex.serie + "×" + ex.ripetizioni +
-        " · Rec " + (ex.recupero || "—") + " · RIR " + (ex.rir || "—") + " · kg: _______</p>" +
-        (ex.note ? "<p class=\"ex-pdf-row__note\">" + ex.note + "</p>" : "");
+      row.appendChild(figureNum(i, ex));
+
+      var body = el("div");
+      var nameLine = el("p", { className: "ex-pdf-row__name" });
+      nameLine.textContent = ex.nome;
+      if (ex.progressione) {
+        nameLine.appendChild(el("span", { className: "ex-pdf-row__prog", text: " · Progressione" }));
+      }
+      body.appendChild(nameLine);
+
+      body.appendChild(el("p", {
+        className: "ex-pdf-row__muscles",
+        html: "<strong>Gruppo:</strong> " + ex.gruppo
+      }));
+
+      body.appendChild(el("div", {
+        className: "ex-pdf-row__params",
+        html: "<span><strong>" + ex.serie + "×" + ex.ripetizioni + "</strong></span>" +
+          "<span class=\"target-kg\">kg: _______</span>" +
+          "<span>Rec " + (ex.recupero || "—") + "</span>" +
+          "<span>RIR " + (ex.rir || "—") + "</span>"
+      }));
+
+      if (ex.note) {
+        var tech = el("ul", { className: "ex-pdf-row__tech" });
+        tech.appendChild(el("li", { html: "<strong>Nota scheda:</strong> " + ex.note }));
+        body.appendChild(tech);
+      }
+
       row.appendChild(body);
       row.appendChild(buildExerciseLog(ex));
-      article.appendChild(row);
+      main.appendChild(row);
     });
+    article.appendChild(main);
 
     article.appendChild(el("footer", {
       className: "scheda-sessione-pdf__foot",
-      text: fase.nome + " · " + sessionKey.toUpperCase() + " · Nicola · pesi a penna"
+      text: fase.nome + " · " + sessionKey.toUpperCase() + " · pesi a penna · Nicola"
     }));
+
     root.appendChild(article);
   }
 
   function init() {
     var root = document.getElementById("pdf-root");
     if (!root) return;
+
     var params = new URLSearchParams(window.location.search);
     var faseId = params.get("ciclo");
     var sessionKey = (params.get("sessione") || "ab").toLowerCase();
@@ -119,12 +177,15 @@
     if (printBtn) printBtn.addEventListener("click", function () { window.print(); });
 
     if (!faseId) {
-      root.innerHTML = "<p>Parametro ciclo mancante.</p>";
+      root.innerHTML = "<p>Parametro ciclo mancante. <a href=\"" + u("/") + "\">Torna al ciclo</a></p>";
       return;
     }
 
     fetch(MACRO_URL)
-      .then(function (r) { return r.json(); })
+      .then(function (r) {
+        if (!r.ok) throw new Error("JSON " + r.status);
+        return r.json();
+      })
       .then(function (data) { renderPdf(data, faseId, sessionKey, root); })
       .catch(function (err) { root.innerHTML = "<p>Errore: " + err.message + "</p>"; });
   }

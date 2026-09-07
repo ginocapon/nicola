@@ -6,26 +6,35 @@
   <title>Sessione | Nicola</title>
   <meta name="robots" content="noindex, nofollow">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/css/styles.css">
-  <link rel="stylesheet" href="/admin/css/admin.css">
+  <link rel="stylesheet" href="/css/styles.css?v=1">
+  <link rel="stylesheet" href="/admin/css/admin.css?v=1">
   <script src="/js/site-base.js"></script>
 </head>
-<body>
+<body class="admin-page">
   <a class="skip-link" href="#sessione-root">Vai al contenuto</a>
-  <header class="site-header">
+  <header class="site-header admin-header">
     <div class="wrap">
       <a class="logo" href="/">Nicola<small>Scheda sessione</small></a>
-      <nav class="site-nav"><ul><li><a href="/">Ciclo</a></li></ul></nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-sessione">Menu</button>
+      <nav class="site-nav" id="nav-sessione" aria-label="Sessione">
+        <ul>
+          <li><a href="/#ciclo">Ciclo</a></li>
+          <li><a href="/trasparenza-ai/">Trasparenza AI</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
-  <main class="section">
-    <div class="wrap" id="sessione-root">
-      <p>Caricamento scheda…</p>
-    </div>
+  <main id="contenuto" class="page-veiled">
+    <section class="section">
+      <div class="wrap prose prose--wide" id="sessione-root">
+        <p>Caricamento scheda…</p>
+      </div>
+    </section>
   </main>
   <footer class="site-footer">
     <div class="wrap"><p><small>Nicola · scheda sessione</small></p></div>
   </footer>
-  <script src="/admin/js/sessione.js" defer></script>
+  <script src="/js/main.js?v=1" defer></script>
+  <script src="/admin/js/sessione.js?v=1" defer></script>
 </body>
 </html>
