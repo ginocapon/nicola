@@ -5,15 +5,15 @@
   "split": "3 giorni: Lun AB (35%) · Mer AC (25%) · Sab CB (40%)",
   "inizio": "2026-09-08",
   "fine": "2026-12-07",
-  "progressione": "Settimane 1–4: RIR 3–2, 45 min, impara i movimenti. Settimane 5–8: RIR 2, 50 min. Settimane 9–12: RIR 1–2, 55 min. Settimana 13: deload −40% volume.",
+  "progressione": "Settimane 1–4: volume ridotto (~46 serie/sett. totali), RIR 3–2, ~45 min — impara i movimenti senza carico recessivo. Settimane 5–8: +1 serie dove indicato in scheda (volume pieno ~60 serie/sett.), RIR 2, ~50 min. Settimana 9: micro scarico −25%. Settimane 10–12: volume pieno, RIR 1–2, ~55 min. Settimana 13: deload −40%.",
   "settimana_tipo": [
-    { "giorno": "Lunedì", "scheda_id": "ab", "focus": "Spinta petto/spalle + gambe brevi (35%)" },
+    { "giorno": "Lunedì", "scheda_id": "ab", "focus": "Parte alta completa A (35%)" },
     { "giorno": "Martedì", "scheda_id": null, "focus": "Riposo / mobilità spalle" },
-    { "giorno": "Mercoledì", "scheda_id": "ac", "focus": "Tirata + braccia (25% — seduta corta)" },
+    { "giorno": "Mercoledì", "scheda_id": "ac", "focus": "Gambe generali + bicipiti 3×8 (25% — seduta corta)" },
     { "giorno": "Giovedì", "scheda_id": null, "focus": "Riposo / studio" },
     { "giorno": "Venerdì", "scheda_id": null, "focus": "Riposo" },
-    { "giorno": "Sabato", "scheda_id": "cb", "focus": "Schiena + petto inclinato + braccia (40%)" },
+    { "giorno": "Sabato", "scheda_id": "cb", "focus": "Parte alta completa B (40%)" },
     { "giorno": "Domenica", "scheda_id": null, "focus": "Riposo" }
   ],
-  "note": "Dal 4° mese (fase 2) le sedute restano entro 60 minuti. Gambe sempre volume minimo: Nicola ha già muscolatura inferiore molto sviluppata."
+  "note": "La scheda stampata mostra le serie di partenza (sett. 1–4). Da sett. 5 aggiungi serie come da note esercizio. Dal 4° mese (fase 2) max 60 min per seduta parte alta."
 }

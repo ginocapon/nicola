@@ -66,7 +66,17 @@ Studente: mercoledì deve restare la seduta più breve.
 ## 5. Le 4 fasi
 
 ### Fase 1 · Ipertrofia + tecnica (set–dic)
-Costruire tessuto e imparare i fondamentali del busto. RIR 3→1. Non inseguire PR.
+Costruire tessuto e imparare i fondamentali del busto. **Volume serie progressivo** — partenza bassa per non stressare un ragazzo studente.
+
+| Settimane | Serie/sett. | RIR | Durata | Note |
+|-----------|-------------|-----|--------|------|
+| **1–4** | ~46 (ridotto) | 3–2 | ~45 min | Scheda con serie iniziali. Focus tecnica. |
+| **5–8** | ~60 (pieno) | 2 | ~50 min | +1 serie dove indicato «da sett. 5» |
+| **9** | −25% | 2–3 | ~45 min | Micro scarico |
+| **10–12** | ~60 | 1–2 | ~55 min | Picco controllato |
+| **13** | −40% | 3+ | ~40 min | Deload |
+
+Non inseguire PR in fase 1.
 
 ### Fase 2 · Tensione + forza (dic–mar)
 Stessi esercizi, 4–8 rep sui *, max 60 min.

@@ -62,6 +62,41 @@
     root.appendChild(box);
   }
 
+  function renderProgressioneVolume(fase, root) {
+    var pv = fase.progressioneVolume;
+    if (!pv) return;
+    var box = el("aside", { className: "ciclo-principi panel-raised admin-progressione" });
+    box.appendChild(el("h3", { text: pv.titolo || "Progressione volume" }));
+    if (pv.perche) {
+      box.appendChild(el("p", { className: "ciclo-lead", text: pv.perche }));
+    }
+    var tableWrap = el("div", { className: "table-wrap" });
+    var table = el("table", { className: "scheda-table admin-session-table" });
+    table.innerHTML = "<thead><tr><th>Settimane</th><th>Serie/sett.</th><th>RIR</th><th>Durata</th><th>Cosa fare</th></tr></thead>";
+    var tbody = el("tbody");
+    (pv.blocchi || []).forEach(function (b) {
+      var tr = el("tr");
+      tr.innerHTML =
+        "<td><strong>" + b.settimane + "</strong></td>" +
+        "<td>" + b.serieSettimanali + "</td>" +
+        "<td>" + b.rir + "</td>" +
+        "<td>" + b.durata + "</td>" +
+        "<td>" + b.azione + "</td>";
+      tbody.appendChild(tr);
+    });
+    table.appendChild(tbody);
+    tableWrap.appendChild(table);
+    box.appendChild(tableWrap);
+    if (pv.seriePienoPerSeduta) {
+      var sp = pv.seriePienoPerSeduta;
+      box.appendChild(el("p", {
+        className: "ciclo-principi__meta",
+        text: "Serie piene per seduta (da sett. 5 / 10–12): AB " + sp.ab + " · AC " + sp.ac + " · CB " + sp.cb
+      }));
+    }
+    root.appendChild(box);
+  }
+
   function renderIr(fase) {
     var ir = fase.intensitaRecupero || {};
     var wrap = el("div", { className: "admin-fase__ir" });
@@ -106,6 +141,7 @@
         " · " + fase.settimane + " settimane</p>";
       block.appendChild(head);
       block.appendChild(renderIr(fase));
+      if (i === 0) renderProgressioneVolume(fase, block);
 
       var grid = el("div", { className: "admin-sessioni-grid admin-sessioni-grid--3" });
       SESSIONI.forEach(function (key) {

@@ -90,7 +90,9 @@
       if (ex.progressione) tr.className = "admin-row--prog";
       tr.innerHTML =
         "<td>" + (i + 1) + (ex.progressione ? " *" : "") + "</td>" +
-        "<td><strong>" + ex.nome + "</strong></td>" +
+        "<td><strong>" + ex.nome + "</strong>" +
+        (ex.seriePieno && ex.seriePieno > ex.serie ? " <span class=\"tag-prog\">→ " + ex.seriePieno + " s.</span>" : "") +
+        "</td>" +
         "<td>" + ex.gruppo + "</td>" +
         "<td>" + ex.serie + "×" + ex.ripetizioni + "</td>" +
         "<td class=\"admin-peso\">_______</td>" +
