@@ -17,9 +17,9 @@ Ciclo annuale bodybuilding per **Nicola**: 4 fasi × 13 settimane, **3 schede a 
 
 | Giorno | Scheda | Quota volume |
 |--------|--------|--------------|
-| Lunedì | AB — Spinta + gambe brevi | 35% |
-| Mercoledì | AC — Tirata + braccia | 25% |
-| Sabato | CB — Schiena + petto + braccia | 40% |
+| Lunedì | AB — Parte alta completa A | 35% |
+| Mercoledì | AC — Gambe generali + bicipiti 3×8 (no polpacci) | 25% |
+| Sabato | CB — Parte alta completa B | 40% |
 
 ## Durata sedute
 

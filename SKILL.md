@@ -38,21 +38,15 @@ MACROCICLO  ≈ 52 settimane
 
 ## 3. Settimana: 3 sedute, distribuzione volume
 
-| Lettera | Ruolo |
-|---------|--------|
-| **A** | Spinta parte alta (petto, spalle, tricipiti) |
-| **B** | Gambe — **solo mantenimento** (volume minimo) |
-| **C** | Tirata (schiena, posteriori spalla, bicipiti) |
-
 | Giorno | Scheda | Quota | Contenuto |
 |--------|--------|-------|-----------|
-| **Lunedì** | AB | 35% | Spinta + gambe brevi |
-| **Mercoledì** | AC | 25% | Tirata + braccia (seduta corta) |
-| **Sabato** | CB | 40% | Schiena + petto inclinato + braccia + gambe minime |
+| **Lunedì** | AB | 35% | **Parte alta completa** — petto, schiena, spalle, braccia (zero gambe) |
+| **Mercoledì** | AC | 25% | **Gambe generali** (quad, femorali, glutei) — **no polpacci** — + **bicipiti 3×8** |
+| **Sabato** | CB | 40% | **Parte alta completa** — tutti i distretti del busto (zero gambe) |
 
-**Priorità volume:** ~**70% serie sulla parte alta**. Gambe/glutei/polpacci: mantenimento.
+**Priorità volume:** ~**75% serie sul busto**. Gambe solo richiamo mercoledì. **Polpacci esclusi** (già molto sviluppati).
 
-Non fare AB e CB in giorni consecutivi (idealmente Lun · Mer · Sab).
+Lun e Sab coprono insieme tutti i muscoli della parte alta con esercizi complementari. Mer resta la seduta più breve (studente).
 
 ---
 
@@ -72,7 +66,17 @@ Studente: mercoledì deve restare la seduta più breve.
 ## 5. Le 4 fasi
 
 ### Fase 1 · Ipertrofia + tecnica (set–dic)
-Costruire tessuto e imparare i fondamentali del busto. RIR 3→1. Non inseguire PR.
+Costruire tessuto e imparare i fondamentali del busto. **Volume serie progressivo** — partenza bassa per non stressare un ragazzo studente.
+
+| Settimane | Serie/sett. | RIR | Durata | Note |
+|-----------|-------------|-----|--------|------|
+| **1–4** | ~46 (ridotto) | 3–2 | ~45 min | Scheda con serie iniziali. Focus tecnica. |
+| **5–8** | ~60 (pieno) | 2 | ~50 min | +1 serie dove indicato «da sett. 5» |
+| **9** | −25% | 2–3 | ~45 min | Micro scarico |
+| **10–12** | ~60 | 1–2 | ~55 min | Picco controllato |
+| **13** | −40% | 3+ | ~40 min | Deload |
+
+Non inseguire PR in fase 1.
 
 ### Fase 2 · Tensione + forza (dic–mar)
 Stessi esercizi, 4–8 rep sui *, max 60 min.
