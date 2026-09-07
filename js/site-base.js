@@ -11,4 +11,10 @@
     if (path.charAt(0) !== "/") path = "/" + path;
     return base + path;
   };
+  if (base && !document.querySelector("base[data-fq-base]")) {
+    var el = document.createElement("base");
+    el.href = base + "/";
+    el.setAttribute("data-fq-base", "1");
+    document.head.insertBefore(el, document.head.firstChild);
+  }
 })();

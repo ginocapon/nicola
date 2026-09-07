@@ -9,6 +9,10 @@
   var CATALOGO_URL = (window.fqUrl ? window.fqUrl("/admin/data/esercizi-catalogo.json") : "/admin/data/esercizi-catalogo.json");
   var BLOCCO1_ID = "ipertrofia-accumulo";
 
+  function u(path) {
+    return window.fqUrl ? window.fqUrl(path) : path;
+  }
+
   function el(tag, attrs, children) {
     var node = document.createElement(tag);
     if (attrs) {
@@ -42,8 +46,8 @@
   }
 
   function sessionHref(faseId, sessionKey) {
-    return "/admin/sessione/?ciclo=" + encodeURIComponent(faseId) +
-      "&sessione=" + sessionKey + querySuffix();
+    return u("/admin/sessione/?ciclo=" + encodeURIComponent(faseId) +
+      "&sessione=" + sessionKey + querySuffix());
   }
 
   function renderSessionBasic(data, faseId, sessionKey, root) {
@@ -57,7 +61,7 @@
     document.title = sessionKey.toUpperCase() + " · " + fase.nome + " | Admin";
 
     var nav = el("nav", { className: "admin-breadcrumb" });
-    nav.innerHTML = "<a href=\"/admin/\">Dashboard</a> · <strong>" + sessionKey.toUpperCase() + "</strong>";
+    nav.innerHTML = "<a href=\"" + u("/") + "\">Dashboard</a> · <strong>" + sessionKey.toUpperCase() + "</strong>";
     root.appendChild(nav);
 
     var head = el("header", { className: "admin-session-head" });
@@ -75,8 +79,8 @@
 
     var actions = el("div", { className: "admin-session-actions no-print" });
     actions.innerHTML =
-      "<a class=\"btn btn-primary\" href=\"/admin/sessione/pdf/?ciclo=" + encodeURIComponent(faseId) +
-      "&sessione=" + sessionKey + querySuffix() + "\" target=\"_blank\">PDF scheda</a>";
+      "<a class=\"btn btn-primary\" href=\"" + u("/admin/sessione/pdf/?ciclo=" + encodeURIComponent(faseId) +
+      "&sessione=" + sessionKey + querySuffix()) + "\" target=\"_blank\">PDF scheda</a>";
     root.appendChild(actions);
 
     var tableWrap = el("div", { className: "table-wrap" });
@@ -112,7 +116,7 @@
     var faseId = params.get("ciclo");
     var sessionKey = (params.get("sessione") || "ab").toLowerCase();
     if (!faseId) {
-      root.innerHTML = "<p>Parametro <code>ciclo</code> mancante. <a href=\"/admin/\">Dashboard</a>.</p>";
+      root.innerHTML = "<p>Parametro <code>ciclo</code> mancante. <a href=\"" + u("/") + "\">Dashboard</a>.</p>";
       return;
     }
 
