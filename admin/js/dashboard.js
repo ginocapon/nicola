@@ -45,10 +45,10 @@
     var ul = el("ul", { className: "ciclo-principi__list" });
     [
       "3 allenamenti: Lun AB (35%) · Mer AC (25%) · Sab CB (40%). Mercoledì = seduta breve post-lezioni.",
-      "Lunedì e sabato: parte alta completa (petto, schiena, spalle, braccia) — tutti i muscoli del busto, zero gambe.",
-      "Mercoledì: richiamo gambe generali (quad, femorali, glutei). Nessun polpaccio. Bicipiti fissi 3×8.",
-      "Priorità ~75% serie sul busto. Stessi esercizi per tutta la fase; cambiano serie, rep, RIR.",
-      "Fase 1: 45→55 min parte alta · Mer ~35 min. Dal mese 4: max 60 min (Lun/Sab). Deload sett. 13.",
+      "Priorità alla parte alta (petto, schiena, spalle, braccia). Gambe in mantenimento con poche serie.",
+      "Lunedì: spinta + gambe brevi. Mercoledì: tirata + braccia, seduta corta. Sabato: schiena, petto e braccia.",
+      "Stessi esercizi per tutto l'anno; cambiano serie, ripetizioni e RIR. Nessun aumento automatico: si sale solo con sedute fatte, tecnica pulita e buon recupero.",
+      "Sedute fino a 45-60 min. Ultima settimana di ogni fase: scarico.",
       "Esercizi scelti ad hoc per Nicola — non copiati da altri atleti."
     ].forEach(function (t) {
       ul.appendChild(el("li", { text: t }));
@@ -57,7 +57,7 @@
     box.appendChild(el("p", {
       className: "ciclo-principi__meta",
       text: (p.distribuzioneGiorni || "Lun 35% · Mer 25% · Sab 40%") +
-        " · " + (p.prioritaVolume || "parte alta ~70%")
+        " · " + (p.prioritaVolume || "parte alta in priorità")
     }));
     root.appendChild(box);
   }
@@ -91,7 +91,7 @@
       var sp = pv.seriePienoPerSeduta;
       box.appendChild(el("p", {
         className: "ciclo-principi__meta",
-        text: "Serie piene per seduta (da sett. 5 / 10–12): AB " + sp.ab + " · AC " + sp.ac + " · CB " + sp.cb
+        text: "Serie per seduta a regime: AB " + sp.ab + " · AC " + sp.ac + " · CB " + sp.cb
       }));
     }
     root.appendChild(box);
@@ -114,7 +114,7 @@
     }
     wrap.appendChild(el("p", {
       className: "admin-fase__durata",
-      text: (ir.durataSeduta || "45–60 min") + " · " + (ir.deload || "settimana 13 · −40% volume")
+      text: (ir.durataSeduta || "45–60 min") + " · " + (ir.deload || "ultima settimana della fase · scarico")
     }));
     return wrap;
   }
@@ -125,7 +125,7 @@
     root.appendChild(el("p", {
       className: "ciclo-lead",
       text: formatDate(data.macrociclo.inizio) + " → " + formatDate(data.macrociclo.fine) +
-        " · 4 fasi × 13 settimane · Lun/Mer/Sab · parte alta ~70%"
+        " · 4 fasi da circa 3 mesi · Lun/Mer/Sab · parte alta in priorità"
     }));
 
     renderPrincipi(data, root);
@@ -138,10 +138,10 @@
         "<span class=\"admin-fase__num\">Fase " + (i + 1) + "</span>" +
         "<h3>" + fase.nome.replace(/^Fase \d+ · /, "") + "</h3>" +
         "<p class=\"admin-fase__dates\">" + formatDate(fase.inizio) + " – " + formatDate(fase.fine) +
-        " · " + fase.settimane + " settimane</p>";
+        " · circa " + fase.settimane + " settimane</p>";
       block.appendChild(head);
       block.appendChild(renderIr(fase));
-      if (i === 0) renderProgressioneVolume(fase, block);
+      renderProgressioneVolume(fase, block);
 
       var faseActions = el("div", { className: "admin-fase__actions" });
       faseActions.innerHTML =

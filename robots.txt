@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nico-1910.github.io/nicola/sitemap.xml

@@ -9,7 +9,7 @@
   "frequenza": "3 allenamenti/settimana · Lun · Mer · Sab",
   "durataSeduta": "45 min (sett. 1–4) → 50 min (5–8) → 55 min (9–12) · sett. 13: 40 min",
   "guida": "Fase di costruzione tecnica sul busto. Nicola ha già gambe, glutei e polpacci sviluppati: il volume inferiore resta minimo. Intensità ondulata RIR 3→1, scarico sett. 9, picco sett. 10–12, deload obbligatorio sett. 13. Non inseguire PR: serie pulite e progressione solo quando la forma regge.",
-  "schedaIntro": "3 allenamenti/settimana: Lun AB (35%) · Mer AC (25%) · Sab CB (40%). Priorità parte alta ~70%. Gambe in mantenimento. Pesi a penna. PDF anonimo.",
+  "schedaIntro": "3 allenamenti/settimana: Lun AB (35%) · Mer AC (25%) · Sab CB (40%). Priorità parte alta. Gambe in mantenimento. Pesi a penna. PDF anonimo.",
   "periodizzazione": [
     { "fase": "Adattamento", "settimane": "1-4", "rir": "3-2", "obiettivo": "Tecnica, ricerca carichi, 45 min" },
     { "fase": "Accumulo", "settimane": "5-8", "rir": "2", "obiettivo": "Volume stabile, 50 min" },
@@ -26,7 +26,7 @@
   },
   "guidaOperativa": {
     "titolo": "Metodo Blocco 1 — Nicola",
-    "sintesi": "Stesso programma 13 settimane: cambiano RIR, volume (sett. 9 e 13) e kg. Tre schede AB, AC, CB. Parte alta ~70%, gambe mantenimento.",
+    "sintesi": "Stesso programma 13 settimane: cambiano RIR, volume (sett. 9 e 13) e kg. Tre schede AB, AC, CB. Priorità parte alta, gambe mantenimento.",
     "distribuzioneSettimanale": {
       "schema": "Lun AB (35%) · Mer AC (25%) · Sab CB (40%)",
       "consigliata": [

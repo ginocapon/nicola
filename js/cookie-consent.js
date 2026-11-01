@@ -7,8 +7,9 @@
     ai.className = "ai-site-notice";
     ai.setAttribute("role", "note");
     ai.innerHTML =
-      'Il ritratto in home è una <strong>foto originale</strong>. Le figure degli esercizi sono SVG tecnici. ' +
-      'Dettagli: <a href="' + (window.fqUrl ? window.fqUrl("/trasparenza-ai/") : "/trasparenza-ai/") + '">Trasparenza AI (AI Act UE)</a>.';
+      'Le immagini illustrative generate con IA sono marcate <strong>\u00abfoto AI\u00bb</strong>. ' +
+      'Le figure degli esercizi sono SVG tecnici. ' +
+      'Dettagli: <a href="' + ((window.ndUrl || window.fqUrl) ? (window.ndUrl || window.fqUrl)("/trasparenza-ai/") : "/trasparenza-ai/") + '">Trasparenza AI (AI Act UE)</a>.';
     footer.appendChild(ai);
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", injectFooter);

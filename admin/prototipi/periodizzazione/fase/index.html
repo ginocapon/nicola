@@ -16,11 +16,11 @@
 
 <script>(function(){var p=location.pathname,i=p.indexOf("/admin/"),b="";if(i>0)b=p.slice(0,i);else if(/^\/nicola(\/|$)/i.test(p))b="/nicola";window.FQ_BASE=b;window.fqUrl=function(u){if(!u)return(b||"")+"/";if(u.charAt(0)!=="/")u="/"+u;return b+u;};var bh=(b||"")+"/";if(!document.querySelector("base[data-fq-base]")){var e=document.createElement("base");e.href=bh;e.setAttribute("data-fq-base","1");document.head.insertBefore(e,document.head.firstChild);}})();</script>
 
-<link rel="stylesheet" href="css/styles.css?v=3" media="screen">
+<link rel="stylesheet" href="css/styles.css?v=6" media="screen">
 
 <link rel="stylesheet" href="css/schede-peso-print.css?v=11">
 
-<link rel="stylesheet" href="admin/css/admin.css?v=2" media="screen">
+<link rel="stylesheet" href="admin/css/admin.css?v=8" media="screen">
 
 <link rel="stylesheet" href="admin/css/admin-print.css?v=12">
 
@@ -56,7 +56,7 @@ html, body { background: #fff; color: #111; }
 
       <button type="button" class="btn btn-primary" id="scheda-print-btn">Stampa / Salva PDF</button>
 
-      <a class="btn btn-ghost" href="./">← Ciclo</a>
+      <a class="btn btn-ghost" href="schede/">← Ciclo</a>
 
       <a class="btn btn-ghost" href="admin/metodo-blocco1/">Metodo</a>
 
@@ -80,7 +80,7 @@ html, body { background: #fff; color: #111; }
 
 <script src="js/schede-peso.js?v=1" defer></script>
 
-<script src="admin/js/fase-pdf.js?v=3" defer></script>
+<script src="admin/js/fase-pdf.js?v=6" defer></script>
 
 </body>
 

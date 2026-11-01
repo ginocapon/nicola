@@ -1,5 +1,5 @@
 /* Admin — La Forza Quotidiana */
-.admin-page .admin-header { border-bottom-color: rgba(201, 120, 58, 0.35); }
+.admin-page .admin-header { border-bottom-color: rgba(71, 137, 203, 0.35); }
 
 .admin-hero {
   padding: 2.5rem 0 1.5rem;
@@ -13,7 +13,7 @@
   margin: 0 0 0.5rem;
 }
 .admin-hero h1 { margin: 0 0 0.75rem; font-size: clamp(1.6rem, 4vw, 2.2rem); }
-.admin-hero .lead { max-width: 58ch; color: #ccc4b8; margin: 0; }
+.admin-hero .lead { max-width: 58ch; color: #bfc9d4; margin: 0; }
 
 .admin-grid {
   display: grid;
@@ -41,7 +41,7 @@
 /* Colore dedicato invece di opacity: l'opacity abbassava il contrasto sotto 4.5:1 */
 .admin-card--muted {
   pointer-events: none;
-  color: #b8aea4;
+  color: #aab5c1;
   border-style: dashed;
 }
 .admin-card__label {
@@ -141,7 +141,7 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-.perio-table tbody tr:nth-child(even) { background: rgba(255,255,255,0.02); }
+.perio-table tbody tr:nth-child(even) { background: rgba(255, 255, 255,0.02); }
 
 /* Guida teoria annuale */
 .perio-toc {
@@ -154,7 +154,7 @@
   font-size: 0.84rem;
 }
 .perio-toc a {
-  color: #ccc4b8;
+  color: #bfc9d4;
   text-decoration: none;
   border-bottom: 1px solid transparent;
 }
@@ -168,19 +168,19 @@
   margin: 2.75rem 0 1rem;
   font-size: clamp(1.25rem, 2.5vw, 1.55rem);
   scroll-margin-top: 5rem;
-  color: #f4efe6;
+  color: #dbe5f0;
 }
 .perio-guide h3 {
   margin: 0 0 0.4rem;
   font-size: 1.05rem;
-  color: #f4efe6;
+  color: #dbe5f0;
 }
 .perio-guide p,
 .perio-guide li {
-  color: #e4dcd0;
+  color: #d9e1ea;
 }
 .perio-hub__h2 {
-  color: #f4efe6;
+  color: #dbe5f0;
 }
 
 .perio-callout {
@@ -191,7 +191,7 @@
   border-left: 3px solid var(--accent);
   border-radius: 12px;
 }
-.perio-callout p { margin: 0 0 0.65rem; color: #ccc4b8; font-size: 0.95rem; }
+.perio-callout p { margin: 0 0 0.65rem; color: #bfc9d4; font-size: 0.95rem; }
 .perio-callout p:last-child { margin-bottom: 0; }
 
 .perio-checklist {
@@ -204,10 +204,10 @@
 .perio-note {
   margin: 1rem 0 0;
   padding: 0.85rem 1rem;
-  background: rgba(201, 120, 58, 0.08);
+  background: rgba(71, 137, 203, 0.08);
   border-radius: 10px;
   font-size: 0.92rem;
-  color: #ccc4b8;
+  color: #bfc9d4;
 }
 
 .perio-year {
@@ -233,7 +233,7 @@
   width: 2.4rem;
   height: 2.4rem;
   border-radius: 50%;
-  background: rgba(201, 120, 58, 0.18);
+  background: rgba(71, 137, 203, 0.18);
   color: var(--accent);
   font-weight: 700;
   font-size: 1.05rem;
@@ -248,7 +248,7 @@
 .perio-year__gain {
   margin: 0 0 0.4rem;
   font-size: 0.92rem;
-  color: #ccc4b8;
+  color: #bfc9d4;
 }
 .perio-year__gain { margin-bottom: 0; }
 
@@ -268,7 +268,7 @@
   border-top: 1px solid var(--line);
 }
 .perio-split-box h4 { margin: 0 0 0.35rem; font-size: 0.95rem; }
-.perio-split-box p { margin: 0 0 0.35rem; font-size: 0.88rem; color: #ccc4b8; }
+.perio-split-box p { margin: 0 0 0.35rem; font-size: 0.88rem; color: #bfc9d4; }
 
 .perio-week {
   display: grid;
@@ -313,7 +313,7 @@
   border: 1px solid var(--line);
   border-radius: 12px;
 }
-.perio-steps p { margin: 0; font-size: 0.9rem; color: #ccc4b8; }
+.perio-steps p { margin: 0; font-size: 0.9rem; color: #bfc9d4; }
 
 .perio-benefits {
   display: grid;
@@ -329,7 +329,7 @@
   border: 1px solid var(--line);
   border-radius: 12px;
 }
-.perio-benefits p { margin: 0; font-size: 0.9rem; color: #ccc4b8; }
+.perio-benefits p { margin: 0; font-size: 0.9rem; color: #bfc9d4; }
 
 .perio-next {
   margin: 2.5rem 0 1rem;
@@ -339,7 +339,7 @@
   border-radius: 16px;
 }
 .perio-next h2 { margin: 0 0 0.5rem !important; }
-.perio-next p { margin: 0 0 1rem; color: #ccc4b8; }
+.perio-next p { margin: 0 0 1rem; color: #bfc9d4; }
 .perio-next__actions {
   display: flex;
   flex-wrap: wrap;
@@ -394,7 +394,7 @@
   letter-spacing: 0.05em;
   color: var(--muted);
 }
-.exercise-tech-grid ul { margin: 0; padding-left: 1.1rem; color: #ccc4b8; }
+.exercise-tech-grid ul { margin: 0; padding-left: 1.1rem; color: #bfc9d4; }
 
 .pdf-cycle-select {
   display: flex;
@@ -452,7 +452,7 @@
 }
 .admin-fase h3 { margin: 0.15rem 0; font-size: 1.15rem; }
 .admin-fase__dates { margin: 0; font-size: 0.85rem; color: var(--muted); }
-.admin-fase__obiettivo { margin: 0; font-size: 0.9rem; color: #ccc4b8; max-width: 28rem; }
+.admin-fase__obiettivo { margin: 0; font-size: 0.9rem; color: #bfc9d4; max-width: 28rem; }
 .admin-fase__ir {
   display: grid;
   gap: 0.45rem;
@@ -462,14 +462,14 @@
   border-radius: 12px;
   border: 1px solid var(--line);
 }
-.admin-fase__ir p { margin: 0; font-size: 0.88rem; color: #ccc4b8; line-height: 1.45; }
+.admin-fase__ir p { margin: 0; font-size: 0.88rem; color: #bfc9d4; line-height: 1.45; }
 .admin-fase__perche { color: var(--text) !important; }
 .admin-fase__durata { font-size: 0.8rem !important; color: var(--muted) !important; }
 
 .ciclo-principi { padding: 1.15rem 1.25rem; margin: 0 0 1.5rem; }
 .ciclo-principi h3 { margin: 0 0 0.6rem; font-size: 1.05rem; }
 .ciclo-principi__list { margin: 0; padding-left: 1.15rem; }
-.ciclo-principi__list li { margin: 0 0 0.4rem; font-size: 0.9rem; color: #ccc4b8; }
+.ciclo-principi__list li { margin: 0 0 0.4rem; font-size: 0.9rem; color: #bfc9d4; }
 .ciclo-principi__meta { margin: 0.75rem 0 0; font-size: 0.8rem; color: var(--muted); }
 .scheda-mini__nota { font-size: 0.78rem !important; line-height: 1.35; }
 
@@ -503,12 +503,12 @@
   background: var(--accent-soft);
   color: var(--accent);
   text-decoration: none;
-  border: 1px solid rgba(201, 120, 58, 0.35);
+  border: 1px solid rgba(71, 137, 203, 0.35);
   z-index: 2;
 }
 .admin-sessione-card-pdf:hover {
   background: var(--accent);
-  color: #fff;
+  color: #ffffff;
 }
 
 .admin-sessione-card {
@@ -537,7 +537,7 @@
 }
 .admin-sessione-card strong { display: block; font-size: 0.88rem; line-height: 1.3; margin-bottom: 0.35rem; }
 .admin-sessione-card p { margin: 0 0 0.25rem; font-size: 0.8rem; color: var(--muted); }
-.admin-sessione-card__main { color: #ccc4b8 !important; font-size: 0.78rem !important; }
+.admin-sessione-card__main { color: #bfc9d4 !important; font-size: 0.78rem !important; }
 .admin-sessione-card__cta { font-size: 0.78rem; color: var(--accent); font-weight: 600; }
 
 /* Pagina sessione */
@@ -546,8 +546,8 @@
 .admin-session-head { margin-bottom: 1.5rem; }
 .admin-session-head h1 { margin: 0.25rem 0 0.5rem; font-size: clamp(1.3rem, 3vw, 1.8rem); }
 .admin-session-table { font-size: 0.88rem; }
-.admin-session-table .admin-peso { font-weight: 700; color: #e8dcc8; white-space: nowrap; }
-.admin-row--prog { background: rgba(201, 120, 58, 0.08); }
+.admin-session-table .admin-peso { font-weight: 700; color: #d3dfed; white-space: nowrap; }
+.admin-row--prog { background: rgba(71, 137, 203, 0.08); }
 .admin-log-box {
   margin: 1.5rem 0;
   padding: 1rem 1.25rem;
@@ -599,7 +599,7 @@
 .admin-section { margin: 2rem 0; }
 .admin-section--shared { border-top: 1px solid var(--line); padding-top: 1.5rem; }
 .admin-ex-fig svg { width: 96px; height: 96px; }
-.exercise-card--prog { border-color: rgba(201, 120, 58, 0.45); }
+.exercise-card--prog { border-color: rgba(71, 137, 203, 0.45); }
 .tag-prog { color: var(--accent); font-weight: 600; }
 .admin-diario-table { font-size: 0.82rem; }
 
@@ -618,7 +618,7 @@
   font-weight: 700;
   letter-spacing: 0.06em;
   color: var(--accent);
-  background: rgba(201, 120, 58, 0.12);
+  background: rgba(71, 137, 203, 0.12);
   padding: 0.15rem 0.4rem;
   border-radius: 4px;
 }
@@ -631,7 +631,7 @@
 .admin-metodo-section { margin-bottom: 2.5rem; }
 .admin-metodo-section h2 { margin-bottom: 0.75rem; }
 .admin-metodo-section h3 { margin: 1.25rem 0 0.5rem; font-size: 1rem; }
-.admin-metodo-lead { color: #ccc4b8; max-width: 65ch; margin-bottom: 1rem; }
+.admin-metodo-lead { color: #bfc9d4; max-width: 65ch; margin-bottom: 1rem; }
 .admin-metodo-intro { margin-bottom: 2rem; }
 .admin-metodo-list { margin: 0 0 1rem; padding-left: 1.25rem; }
 .admin-metodo-list li { margin-bottom: 0.35rem; }
@@ -647,7 +647,7 @@
 }
 .scheda-a4__mini-table th,
 .scheda-a4__mini-table td {
-  border: 1px solid #ccc;
+  border: 1px solid #b3cce6;
   padding: 0.2rem 0.35rem;
   text-align: left;
 }
@@ -705,7 +705,7 @@
   color: var(--muted);
 }
 .atleta-dl dd { margin: 0.15rem 0 0; font-size: 1rem; }
-.atleta-hero__note { margin: 0; color: #ccc4b8; max-width: 48ch; font-size: 0.92rem; }
+.atleta-hero__note { margin: 0; color: #bfc9d4; max-width: 48ch; font-size: 0.92rem; }
 
 .ciclo-lead { color: var(--muted); margin: 0 0 1.5rem; }
 
@@ -749,3 +749,41 @@
 .admin-metodo-toolbar h1 { margin: 0 0 0.5rem; font-size: 1.35rem; }
 .admin-metodo-toolbar p { margin: 0 0 1rem; color: var(--muted); }
 .admin-metodo-toolbar .btn-row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+/* leggibilita link (azzurro): specificita 0, ogni classe esistente prevale */
+@media screen {
+  :where(body.admin-page) a:where(:link, :visited) { color: #dff0ff; text-decoration: underline; text-underline-offset: 2px; }
+  :where(body.admin-page) a:where(:link, :visited):hover { color: #ffffff; }
+}
+@media screen {
+  .admin-session-nav a { color: #cfe6ff; }
+  .scheda-mini__actions a.btn { color: #ffffff; font-weight: 600; text-decoration: underline; }
+}
+@media screen {
+  .admin-header .site-nav a, .admin-header .site-nav a:link, .admin-header .site-nav a:visited { color: #dff0ff; }
+  .admin-header .site-nav a[aria-current="page"] { color: #ffffff; font-weight: 700; }
+}
+@media screen and (max-width: 700px) {
+  .admin-page .admin-header { position: static; }
+}
+@media screen {
+  .admin-breadcrumb a { color: #dff0ff; text-decoration: underline; }
+  .admin-session-nav a.is-active, .admin-session-nav a:hover { color: #ffffff; }
+}
+@media screen {
+  .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .table-wrap::after { content: "scorri di lato per vedere tutte le colonne"; display: block; font-size: .75rem; opacity: .8; padding: .35rem 0 0; }
+  .admin-session-table { min-width: 640px; }
+}
+@media screen and (min-width: 760px) {
+  .table-wrap::after { display: none; }
+}
+@media screen {
+  .scheda-table.admin-session-table { table-layout: auto; min-width: 680px; }
+  .scheda-table.admin-session-table th, .scheda-table.admin-session-table td { width: auto; min-width: 0; white-space: normal; overflow-wrap: normal; word-break: normal; }
+  .scheda-table.admin-session-table th:nth-child(1), .scheda-table.admin-session-table td:nth-child(1) { width: 2rem; }
+  .scheda-table.admin-session-table td:nth-child(2) { min-width: 11rem; }
+  .scheda-table.admin-session-table td:last-child, .scheda-table.admin-session-table th:last-child { min-width: 12rem; }
+  .scheda-table.admin-session-table td { white-space: nowrap; }
+  .scheda-table.admin-session-table td:nth-child(2), .scheda-table.admin-session-table td:last-child { white-space: normal; }
+}

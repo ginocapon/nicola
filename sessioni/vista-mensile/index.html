@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vista mensile - Nicola</title>
+<meta name="description" content="Vista mensile degli allenamenti di Nicola: sessioni, minuti, calorie, battiti e serie, mese per mese.">
+<meta name="theme-color" content="#1f4474">
+<script>(function(){var p=location.pathname,i=p.indexOf("/admin/"),b="";if(i>0)b=p.slice(0,i);else if(/^\/nicola(\/|$)/i.test(p))b="/nicola";window.FQ_BASE=b;window.fqUrl=function(u){if(!u)return(b||"")+"/";if(u.charAt(0)!=="/")u="/"+u;return b+u;};var bh=(b||"")+"/";if(!document.querySelector("base[data-fq-base]")){var e=document.createElement("base");e.href=bh;e.setAttribute("data-fq-base","1");document.head.insertBefore(e,document.head.firstChild);}})();</script>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css?v=6">
+<link rel="stylesheet" href="css/shell.css?v=4">
+<link rel="stylesheet" href="css/pages.css?v=4">
+<link rel="stylesheet" href="css/azzurro.css?v=6">
+</head>
+<body class="site-shell theme-allenamenti">
+<a class="skip-link" href="#contenuto">Vai al contenuto</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="./">Nicola<small>Il mio diario di forza</small></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-principale">Menu</button>
+    <nav class="site-nav" id="nav-principale" aria-label="Principale"><ul></ul></nav>
+  </div>
+</header>
+<main id="contenuto">
+  <header class="session-hero">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Percorso"><a href="sessioni/">Sessioni</a> &middot; Vista mensile</nav>
+      <h1>Vista mensile</h1>
+      <p class="lead">Mese per mese, quanto ho lavorato: sessioni, minuti, calorie, battiti e serie. I dati arrivano dal mio orologio: niente numeri inventati.</p>
+      <div class="vm-controls">
+        <label for="vm-month"><strong>Mese:</strong></label>
+        <select id="vm-month" aria-label="Scegli il mese"></select>
+      </div>
+      <dl class="session-kpis" id="vm-totals" hidden>
+        <div class="session-kpis__item"><dt>Sessioni</dt><dd id="vm-n">-</dd></div>
+        <div class="session-kpis__item"><dt>Minuti</dt><dd id="vm-min">-</dd></div>
+        <div class="session-kpis__item"><dt>Calorie</dt><dd id="vm-kcal">-</dd></div>
+        <div class="session-kpis__item"><dt>FC media</dt><dd id="vm-fc">-</dd></div>
+        <div class="session-kpis__item"><dt>Serie</dt><dd id="vm-serie">-</dd></div>
+      </dl>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <section class="session-panel panel" aria-labelledby="vm-det-title">
+      <h2 id="vm-det-title">Dettaglio del mese</h2>
+      <div id="vm-body"></div>
+      <p class="vm-note">I dati si aggiornano nel file <code>data/sessioni.json</code> dopo ogni allenamento. Se un valore manca nell'orologio, la pagina mostra un trattino invece di inventarlo.</p>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap"><p>&copy; <span id="y"></span> Nicola &middot; Diario, allenamenti, sessioni e schede &middot; <a href="trasparenza-ai/">Trasparenza AI</a></p></div>
+</footer>
+<script>
+(function(){
+  var MESE=['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio','agosto','settembre','ottobre','novembre','dicembre'];
+  function fmtData(d){var p=d.split('-');return parseInt(p[2],10)+' '+MESE[parseInt(p[1],10)-1]+' '+p[0];}
+  function hideControls(){document.querySelector('.vm-controls').style.display='none';}
+  function render(mesi, key){
+    var body=document.getElementById('vm-body'), tot=document.getElementById('vm-totals');
+    var rows=mesi[key]||[];
+    if(!rows.length){tot.hidden=true;hideControls();body.innerHTML='<div class="vm-empty">Nessuna sessione registrata in questo mese. I dati arriveranno dall\'orologio.</div>';return;}
+    var n=rows.length, min=0, kcal=0, fcs=[], serie=0;
+    rows.forEach(function(r){min+=r.durata_min||0;kcal+=r.calorie||0;serie+=r.serie||0;if(r.fc_media)fcs.push(r.fc_media);});
+    document.getElementById('vm-n').textContent=n;
+    document.getElementById('vm-min').textContent=min;
+    document.getElementById('vm-kcal').textContent=kcal;
+    document.getElementById('vm-fc').textContent=fcs.length?Math.round(fcs.reduce(function(a,b){return a+b;},0)/fcs.length):'-';
+    document.getElementById('vm-serie').textContent=serie;
+    tot.hidden=false;
+    var h='<table class="vm-table"><thead><tr><th>Data</th><th>Scheda</th><th>Durata</th><th>FC media</th><th>Calorie</th><th>Serie</th></tr></thead><tbody>';
+    rows.slice().sort(function(a,b){return a.data<b.data?-1:1;}).forEach(function(r){
+      h+='<tr><td>'+fmtData(r.data)+'</td><td>'+(r.scheda||'-')+'</td><td>'+(r.durata_min?r.durata_min+' min':'-')+'</td><td>'+(r.fc_media||'-')+'</td><td>'+(r.calorie||'-')+'</td><td>'+(r.serie||'-')+'</td></tr>';
+    });
+    body.innerHTML=h+'</tbody></table>';
+  }
+  fetch('data/sessioni.json').then(function(r){return r.json();}).then(function(j){
+    var reale=(j.sessioni||[]).filter(function(r){return !r._esempio;});
+    var mesi={};
+    reale.forEach(function(r){var k=r.data.slice(0,7);(mesi[k]=mesi[k]||[]).push(r);});
+    var sel=document.getElementById('vm-month'), keys=Object.keys(mesi).sort().reverse();
+    if(!keys.length){hideControls();document.getElementById('vm-body').innerHTML='<div class="vm-empty">Nessuna sessione ancora registrata. I dati arriveranno dall\'orologio, mese per mese.</div>';return;}
+    keys.forEach(function(k){var p=k.split('-');var o=document.createElement('option');o.value=k;o.textContent=MESE[parseInt(p[1],10)-1]+' '+p[0];sel.appendChild(o);});
+    sel.addEventListener('change',function(){render(mesi,sel.value);});
+    render(mesi,keys[0]);
+  }).catch(function(){
+    hideControls();
+    document.getElementById('vm-body').innerHTML='<div class="vm-empty">Dati non ancora disponibili: il file data/sessioni.json verr&agrave; compilato con gli allenamenti veri.</div>';
+  });
+})();
+</script>
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+<script src="js/main.js?v=4" defer></script>
+<script src="js/cookie-consent.js?v=3" defer></script>
+</body>
+</html>

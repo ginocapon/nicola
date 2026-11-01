@@ -134,5 +134,69 @@
     "setup": "Glutei già sviluppati: 2 serie stimolo.",
     "movimento": "Apertura controllata, squeeze in chiusura.",
     "errori": "Slancio del busto."
+  },
+  "Chest press convergente": {
+    "figura": "fig-chest-converg",
+    "primario": "Petto",
+    "secondario": "Tricipiti, deltoidi anteriori",
+    "setup": "Schienale regolato, impugnature all'altezza del petto, scapole addotte.",
+    "movimento": "Spinta controllata, ritorno lento senza far battere i pesi.",
+    "errori": "Spalle che salgono; peso troppo alto che accorcia il movimento."
+  },
+  "Chest press macchina": {
+    "figura": "fig-chest",
+    "primario": "Petto",
+    "secondario": "Tricipiti, deltoidi anteriori",
+    "setup": "Sedile regolato, maniglie all'altezza del petto.",
+    "movimento": "Spinta fluida, ritorno controllato.",
+    "errori": "Schiena che si stacca dallo schienale; ritorno a scatto."
+  },
+  "Pulley basso presa neutra": {
+    "figura": "fig-pulley-basso",
+    "primario": "Dorsali",
+    "secondario": "Bicipiti, romboidi",
+    "setup": "Seduto, petto alto, piedi saldi sulla pedana.",
+    "movimento": "Tira verso l'addome portando le scapole indietro, ritorno lento.",
+    "errori": "Dondolare col busto; strappare il carico."
+  },
+  "Curl Scott": {
+    "figura": "fig-curl-scott",
+    "primario": "Bicipiti",
+    "secondario": "Brachiale",
+    "setup": "Braccia appoggiate sul cuscino, sedile regolato.",
+    "movimento": "Flessione completa e discesa lenta senza stendere di scatto.",
+    "errori": "Sollevare i gomiti; carico che fa perdere il controllo in discesa."
+  },
+  "Alzate laterali ai cavi": {
+    "figura": "fig-alzate-cavi",
+    "primario": "Deltoide laterale",
+    "secondario": "Trapezio",
+    "setup": "In piedi di fianco al cavo, busto fermo.",
+    "movimento": "Alza il braccio di lato fino all'altezza delle spalle, discesa lenta.",
+    "errori": "Slanci col busto; spalla che sale verso l'orecchio."
+  },
+  "Lat machine presa neutra": {
+    "figura": "fig-lat-neutro",
+    "primario": "Dorsali",
+    "secondario": "Bicipiti",
+    "setup": "Cosciere regolate, presa neutra, busto leggermente indietro.",
+    "movimento": "Tira i gomiti verso i fianchi, ritorno controllato.",
+    "errori": "Tirare con le braccia e basta; oscillare col busto."
+  },
+  "Rematore macchina": {
+    "figura": "fig-rematore",
+    "primario": "Dorsali",
+    "secondario": "Bicipiti, romboidi",
+    "setup": "Petto appoggiato, sedile regolato, impugnature neutre.",
+    "movimento": "Tira i gomiti indietro, pausa breve, ritorno lento.",
+    "errori": "Staccare il petto dal cuscino; spalle in avanti."
+  },
+  "Shoulder press macchina": {
+    "figura": "fig-lento",
+    "primario": "Deltoidi",
+    "secondario": "Tricipiti",
+    "setup": "Sedile regolato, maniglie all'altezza delle spalle.",
+    "movimento": "Spinta verso l'alto senza inarcare la schiena, discesa lenta.",
+    "errori": "Schiena inarcata; ritorno a scatto."
   }
 }

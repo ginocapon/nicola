@@ -68,7 +68,7 @@
     var ir = fase.intensitaRecupero || {};
     var lead = (fase.perche ? fase.perche + " " : "") + (s.notaSeduta || fase.obiettivo || "");
     head.innerHTML = "<p class=\"tagline\">" + formatDate(fase.inizio) + " – " + formatDate(fase.fine) +
-      " · obiettivo 60 min · tetto 75</p><h1>" + sessionKey.toUpperCase() + " — " + s.nome + "</h1><p class=\"lead\">" + lead + "</p>";
+      " · obiettivo " + ((s.durataMinuti && s.durataMinuti.obiettivo) || 60) + " min · tetto " + ((s.durataMinuti && s.durataMinuti.tetto) || 60) + "</p><h1>" + sessionKey.toUpperCase() + " — " + s.nome + "</h1><p class=\"lead\">" + lead + "</p>";
     root.appendChild(head);
     if (ir.intensita || ir.recupero) {
       var irBox = el("aside", { className: "admin-fase__ir" });

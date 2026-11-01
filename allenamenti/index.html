@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Allenamenti - Nicola</title>
+<meta name="description" content="Il programma di allenamento di Nicola: indice delle sezioni, ciclo annuale e collegamenti a schede, sessioni e diario.">
+<meta name="theme-color" content="#1f4474">
+<script>(function(){var p=location.pathname,i=p.indexOf("/admin/"),b="";if(i>0)b=p.slice(0,i);else if(/^\/nicola(\/|$)/i.test(p))b="/nicola";window.FQ_BASE=b;window.fqUrl=function(u){if(!u)return(b||"")+"/";if(u.charAt(0)!=="/")u="/"+u;return b+u;};var bh=(b||"")+"/";if(!document.querySelector("base[data-fq-base]")){var e=document.createElement("base");e.href=bh;e.setAttribute("data-fq-base","1");document.head.insertBefore(e,document.head.firstChild);}})();</script>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css?v=6">
+<link rel="stylesheet" href="css/shell.css?v=4">
+<link rel="stylesheet" href="css/pages.css?v=4">
+<link rel="stylesheet" href="css/azzurro.css?v=6">
+</head>
+<body class="site-shell theme-allenamenti">
+<a class="skip-link" href="#contenuto">Vai al contenuto</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="./">Nicola<small>Il mio diario di forza</small></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-principale">Menu</button>
+    <nav class="site-nav" id="nav-principale" aria-label="Principale"><ul></ul></nav>
+  </div>
+</header>
+<main id="contenuto">
+  <section class="section" aria-labelledby="allen-title">
+    <div class="wrap">
+      <span class="landing-section-label">Allenamenti</span>
+      <h1 id="allen-title">Il programma</h1>
+      <p class="lead">Macrociclo 2026–2027: 4 fasi da circa 3 mesi, 3 sedute a settimana (lun AB · mer AC · sab CB), priorità alla parte alta.</p>
+
+      <div class="card-grid">
+        <a class="hub-card" href="schede/">
+          <img class="hub-card__icon" src="img/icon-schede.svg" alt="" width="46" height="46">
+          <h3>Schede</h3>
+          <p>La scheda del ciclo con esercizi, serie e recuperi, le figure e i PDF da stampare.</p>
+          <span class="hub-card__cta">Vai alle Schede →</span>
+        </a>
+        <a class="hub-card" href="sessioni/">
+          <img class="hub-card__icon" src="img/icon-sessioni.svg" alt="" width="46" height="46">
+          <h3>Sessioni</h3>
+          <p>Il registro delle sedute svolte, con i dati dell'orologio (collegamento da configurare).</p>
+          <span class="hub-card__cta">Vai alle Sessioni →</span>
+        </a>
+        <a class="hub-card" href="sessioni/vista-mensile/">
+          <img class="hub-card__icon" src="img/icon-sessioni.svg" alt="" width="46" height="46">
+          <h3>Vista mensile</h3>
+          <p>Quanto ho lavorato mese per mese: sessioni, minuti, calorie, battiti e serie.</p>
+          <span class="hub-card__cta">Apri la Vista mensile &rarr;</span>
+        </a>
+        <a class="hub-card" href="diario/">
+          <img class="hub-card__icon" src="img/icon-diario.svg" alt="" width="46" height="46">
+          <h3>Diario</h3>
+          <p>Appunti e riflessioni sul percorso, fuori e dentro la palestra.</p>
+          <span class="hub-card__cta">Vai al Diario →</span>
+        </a>
+      </div>
+
+      <section class="section--tight" aria-labelledby="settimana-title">
+        <div class="panel">
+          <h2 id="settimana-title">La settimana tipo</h2>
+          <div class="field-grid">
+            <div class="field-cell"><strong>Lunedì · AB</strong><span>Parte alta completa · 35% del volume</span></div>
+            <div class="field-cell"><strong>Mercoledì · AC</strong><span>Gambe generali + bicipiti · 25% · seduta corta</span></div>
+            <div class="field-cell"><strong>Sabato · CB</strong><span>Parte alta completa · 40% del volume</span></div>
+          </div>
+          <p style="margin-top:1rem">Dettagli, esercizi e carichi sono nelle <a href="schede/">Schede</a>: quella pagina resta identica all'originale.</p>
+        </div>
+      </section>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap"><p>&copy; <span id="y"></span> Nicola &middot; Diario, allenamenti, sessioni e schede &middot; <a href="trasparenza-ai/">Trasparenza AI</a></p></div>
+</footer>
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+<script src="js/main.js?v=4" defer></script>
+<script src="js/cookie-consent.js?v=3" defer></script>
+</body>
+</html>

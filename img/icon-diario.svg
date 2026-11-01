@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46" role="img" aria-label="Icona diario">
+  <rect x="8" y="5" width="30" height="36" rx="5" fill="#46546b" stroke="#6ea8e1" stroke-width="2.5"/>
+  <rect x="13" y="12" width="20" height="3" rx="1.5" fill="#8fbef0"/>
+  <rect x="13" y="19" width="20" height="3" rx="1.5" fill="#b3c0d1"/>
+  <rect x="13" y="26" width="14" height="3" rx="1.5" fill="#b3c0d1"/>
+  <path d="M30 31 l7 -7 3 3 -7 7 -4 1 z" fill="#6ea8e1"/>
+</svg>

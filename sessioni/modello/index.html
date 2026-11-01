@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modello sessione - Sessioni di Nicola</title>
+<meta name="description" content="Modello vuoto per registrare una sessione di allenamento con i dati dell'orologio.">
+<meta name="theme-color" content="#1f4474">
+<script>(function(){var p=location.pathname,i=p.indexOf("/admin/"),b="";if(i>0)b=p.slice(0,i);else if(/^\/nicola(\/|$)/i.test(p))b="/nicola";window.FQ_BASE=b;window.fqUrl=function(u){if(!u)return(b||"")+"/";if(u.charAt(0)!=="/")u="/"+u;return b+u;};var bh=(b||"")+"/";if(!document.querySelector("base[data-fq-base]")){var e=document.createElement("base");e.href=bh;e.setAttribute("data-fq-base","1");document.head.insertBefore(e,document.head.firstChild);}})();</script>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css?v=6">
+<link rel="stylesheet" href="css/shell.css?v=4">
+<link rel="stylesheet" href="css/pages.css?v=4">
+<link rel="stylesheet" href="css/azzurro.css?v=6">
+</head>
+<body class="site-shell theme-allenamenti">
+<a class="skip-link" href="#contenuto">Vai al contenuto</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="./">Nicola<small>Il mio diario di forza</small></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-principale">Menu</button>
+    <nav class="site-nav" id="nav-principale" aria-label="Principale"><ul></ul></nav>
+  </div>
+</header>
+<main id="contenuto">
+  <header class="session-hero">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Percorso"><a href="sessioni/">Sessioni</a> · Modello</nav>
+      <div class="session-hero__top">
+        <span class="session-hero__badge" title="Sigla della scheda">-</span>
+        <time class="session-hero__time" datetime="">Data: da compilare</time>
+      </div>
+      <h1>Modello di sessione</h1>
+      <p class="lead">Scheda: da collegare · Settimana: da compilare</p>
+      <dl class="session-kpis">
+        <div class="session-kpis__item"><dt>Durata</dt><dd>-</dd></div>
+        <div class="session-kpis__item"><dt>FC media</dt><dd>-</dd></div>
+        <div class="session-kpis__item"><dt>FC max</dt><dd>-</dd></div>
+        <div class="session-kpis__item"><dt>Calorie</dt><dd>-</dd></div>
+        <div class="session-kpis__item"><dt>Serie</dt><dd>-</dd></div>
+      </dl>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <section class="session-panel panel" aria-labelledby="sintesi-title">
+      <h2 id="sintesi-title">Sintesi sessione</h2>
+      <div class="placeholder-note">
+        <p>Qui andrà il riepilogo della seduta: data, scheda svolta, durata, frequenza cardiaca, calorie e numero di serie.</p>
+        <p><strong>Il collegamento con l'orologio non è ancora configurato.</strong> Questo modello è vuoto: nessun valore inventato, i dati verranno inseriti solo dopo aver configurato l'importazione.</p>
+      </div>
+    </section>
+
+    <section class="session-panel panel" aria-labelledby="dati-title">
+      <h2 id="dati-title">Dati dall'orologio (collegamento da configurare)</h2>
+      <div class="field-grid">
+        <div class="field-cell"><strong>-</strong><span>Data</span></div>
+        <div class="field-cell"><strong>-</strong><span>Scheda</span></div>
+        <div class="field-cell"><strong>-</strong><span>Durata</span></div>
+        <div class="field-cell"><strong>-</strong><span>Frequenza cardiaca media</span></div>
+        <div class="field-cell"><strong>-</strong><span>Frequenza cardiaca massima</span></div>
+        <div class="field-cell"><strong>-</strong><span>Calorie</span></div>
+        <div class="field-cell"><strong>-</strong><span>Serie</span></div>
+      </div>
+    </section>
+
+    <nav class="session-panel" aria-label="Navigazione sessione" style="display:flex;gap:.7rem;flex-wrap:wrap;margin-bottom:2rem">
+      <a class="btn btn-ghost" href="sessioni/">← Tutte le sessioni</a>
+      <a class="btn btn-ghost" href="schede/">La mia scheda</a>
+    </nav>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap"><p>&copy; <span id="y"></span> Nicola &middot; Diario, allenamenti, sessioni e schede &middot; <a href="trasparenza-ai/">Trasparenza AI</a></p></div>
+</footer>
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+<script src="js/main.js?v=4" defer></script>
+<script src="js/cookie-consent.js?v=3" defer></script>
+</body>
+</html>

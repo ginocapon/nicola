@@ -1,152 +1,122 @@
 <!DOCTYPE html>
-
 <html lang="it">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Nicola — Macrociclo 2026–2027</title>
-
-<meta name="robots" content="noindex, nofollow">
-
-<meta name="description" content="Ciclo annuale Nicola: 4 fasi, 3 schede AB AC CB, priorità parte alta ~70%.">
-
+<title>Nicola - Diario, allenamenti, sessioni e schede</title>
+<meta name="description" content="Il mio spazio di allenamento: scheda del macrociclo 2026-2027, sessioni con i dati dell orologio e diario.">
+<meta name="theme-color" content="#1f4474">
 <script>(function(){var p=location.pathname,i=p.indexOf("/admin/"),b="";if(i>0)b=p.slice(0,i);else if(/^\/nicola(\/|$)/i.test(p))b="/nicola";window.FQ_BASE=b;window.fqUrl=function(u){if(!u)return(b||"")+"/";if(u.charAt(0)!=="/")u="/"+u;return b+u;};var bh=(b||"")+"/";if(!document.querySelector("base[data-fq-base]")){var e=document.createElement("base");e.href=bh;e.setAttribute("data-fq-base","1");document.head.insertBefore(e,document.head.firstChild);}})();</script>
-
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-
-<link rel="stylesheet" href="css/styles.css?v=3">
-
-<link rel="stylesheet" href="admin/css/admin.css?v=2">
-
+<link rel="stylesheet" href="css/styles.css?v=6">
+<link rel="stylesheet" href="css/shell.css?v=4">
+<link rel="stylesheet" href="css/pages.css?v=4">
+<link rel="stylesheet" href="css/azzurro.css?v=6">
 </head>
-
-<body class="admin-page">
-
-<a class="skip-link" href="#ciclo">Vai al ciclo</a>
-
-<header class="site-header admin-header">
-
+<body class="site-shell">
+<a class="skip-link" href="#contenuto">Vai al contenuto</a>
+<header class="site-header">
   <div class="wrap">
-
-    <a class="logo" href="./">Nicola<small>Macrociclo 2026–2027</small></a>
-
-    <nav class="site-nav" aria-label="Principale">
-
-      <ul>
-
-        <li><a href="./#ciclo" aria-current="page">Ciclo</a></li>
-
-        <li><a href="admin/metodo-blocco1/">Metodo</a></li>
-
-        <li><a href="trasparenza-ai/">Trasparenza AI</a></li>
-
-      </ul>
-
-    </nav>
-
+    <a class="logo" href="./">Nicola<small>Il mio diario di forza</small></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-principale">Menu</button>
+    <nav class="site-nav" id="nav-principale" aria-label="Principale"><ul></ul></nav>
   </div>
-
 </header>
-
-
-
-<main id="contenuto">
-
-  <section class="section">
-
-    <div class="wrap">
-
-      <div class="atleta-hero panel-raised">
-
-        <figure class="atleta-hero__photo ai-photo-wrap">
-
-          <img src="admin/img/nicola/riferimento-estetico.webp?v=1" width="681" height="1024"
-
-               alt="Riferimento estetico illustrativo" data-ai="illustrative" loading="lazy">
-
-          <span class="ai-photo-mark">Foto AI</span>
-
-          <figcaption class="fig-credit ai-media-note">
-
-            Riferimento estetico illustrativo, non foto dell'atleta.
-
-            <a href="trasparenza-ai/">Trasparenza AI</a>
-
-          </figcaption>
-
-        </figure>
-
-        <div class="atleta-hero__dati">
-
-          <p class="tagline">Atleta</p>
-
-          <h1>Nicola</h1>
-
-          <dl class="atleta-dl">
-
-            <div><dt>Altezza</dt><dd>176 cm</dd></div>
-
-            <div><dt>Peso</dt><dd>73 kg</dd></div>
-
-            <div><dt>Torace</dt><dd>83 cm</dd></div>
-
-            <div><dt>Braccio</dt><dd>30 cm</dd></div>
-
-            <div><dt>Settimana</dt><dd>Lun AB · Mer AC · Sab CB</dd></div>
-
-            <div><dt>Priorità</dt><dd>Parte alta ~70% · gambe mantenimento</dd></div>
-
-            <div><dt>Volume</dt><dd>Lun 35% · Mer 25% · Sab 40%</dd></div>
-
-            <div><dt>Durata</dt><dd>Fase 1: 45–55 min · Dal mese 4: max 60 min</dd></div>
-
-            <div><dt>Fasi</dt><dd>4 × 13 settimane · deload sett. 13</dd></div>
-
-          </dl>
-
-          <p class="atleta-hero__note">Apri la scheda per vederla con le figure. Scarica PDF per stamparla (A4, kg a penna). In ogni fase trovi spiegazione, intensità, recupero e PDF settimana con tutti e 3 i giorni.</p>
-
-        </div>
-
+<main id="contenuto" class="home-main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__media">
+      <img src="admin/img/nicola/riferimento-estetico.webp" alt="Riferimento estetico illustrativo, generato con IA, non una foto di Nicola" width="1080" height="1620">
+      <span class="hero-ai-mark">Foto AI</span>
+    </div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__content wrap">
+      <p class="tagline">Allenarsi con metodo, settimana dopo settimana</p>
+      <h1 id="hero-title">Forza in palestra. Costanza nella vita.</h1>
+      <p class="lead">Il mio diario di allenamento: la scheda del macrociclo, le sessioni con i dati dell'orologio e il racconto del percorso.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="diario/">Leggi il Diario</a>
+        <a class="btn btn-ghost" href="chi-sono/">Chi sono</a>
       </div>
-
+      <p class="hero__trust">Macrociclo 2026&ndash;2027 &middot; 3 sedute a settimana</p>
+      <p class="hero-ai-note"><span class="ai-badge" aria-hidden="true">IA</span> Foto AI: immagine illustrativa generata con IA, non una foto di Nicola &middot; <a href="trasparenza-ai/">Trasparenza AI</a></p>
     </div>
-
   </section>
 
-
-
-  <section class="section" id="ciclo" aria-labelledby="ciclo-title">
-
-    <div class="wrap" id="admin-dashboard">
-
-      <p>Caricamento ciclo…</p>
-
+  <section class="section section--tight landing-pain page-veiled-band" aria-labelledby="pain-title">
+    <div class="wrap">
+      <span class="landing-section-label">Il metodo</span>
+      <h2 id="pain-title">Poche regole, tenute nel tempo</h2>
+      <div class="landing-pain__grid">
+        <p class="landing-pain__item"><strong>Tre sedute</strong>Lunedì AB, mercoledì AC, sabato CB: una settimana semplice da seguire.</p>
+        <p class="landing-pain__item"><strong>Parte alta in priorità</strong>Il volume va in priorità a petto, schiena, spalle e braccia. Le gambe restano in mantenimento.</p>
+        <p class="landing-pain__item"><strong>Niente numeri inventati</strong>Sessioni e carichi si scrivono solo quando esistono: se un dato manca, resta vuoto.</p>
+      </div>
     </div>
-
   </section>
 
+  <section class="section landing-solution page-veiled-band" aria-labelledby="solution-title">
+    <div class="wrap">
+      <span class="landing-section-label">La scheda</span>
+      <h2 id="solution-title">Quattro fasi da circa tredici settimane</h2>
+      <p class="landing-solution__lead">Il ciclo dura un anno: quattro fasi, tre schede a settimana, durata delle sedute che sale con calma da 45 a 55 minuti e poi al massimo 60. Diario e allenamenti restano due spazi separati.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="schede/">Apri la scheda</a>
+        <a class="btn btn-ghost" href="allenamenti/">Vai agli Allenamenti</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section landing-benefits page-veiled-band" aria-labelledby="benefits-title">
+    <div class="wrap">
+      <span class="landing-section-label">Cosa trovi</span>
+      <h2 id="benefits-title">Diario, allenamenti e chi sono</h2>
+      <div class="home-trio">
+        <a class="home-trio__item" href="diario/" aria-label="Diario">
+          <span class="home-trio__label home-trio__label--oro">Diario</span>
+          <span class="home-trio__box home-trio__box--oro"><img src="img/icon-diario.svg" alt="" width="640" height="360" loading="lazy"></span>
+        </a>
+        <a class="home-trio__item" href="allenamenti/" aria-label="Allenamenti">
+          <span class="home-trio__label home-trio__label--rosso">Allenamenti</span>
+          <span class="home-trio__box home-trio__box--rosso"><img src="img/icon-allenamenti.svg" alt="" width="640" height="360" loading="lazy"></span>
+        </a>
+        <a class="home-trio__item" href="chi-sono/" aria-label="Chi sono">
+          <span class="home-trio__label home-trio__label--argento">Chi sono</span>
+          <span class="home-trio__box home-trio__box--argento"><img src="img/icon-sessioni.svg" alt="" width="640" height="360" loading="lazy"></span>
+        </a>
+      </div>
+      <p class="home-trio__ai-note ai-media-note"><span class="ai-badge" aria-hidden="true">IA</span> L'immagine in alto &egrave; generata con IA &middot; <a href="trasparenza-ai/">Trasparenza</a></p>
+    </div>
+  </section>
+
+  <section class="section section--tight landing-proof page-veiled-band" aria-labelledby="proof-title">
+    <div class="wrap">
+      <span class="landing-section-label">Il piano in numeri</span>
+      <h2 id="proof-title">Dati del programma, non promesse</h2>
+      <div class="landing-proof__stats">
+        <div class="proof-stat"><span class="proof-stat__value">4</span><span class="proof-stat__label">Fasi nel macrociclo</span></div>
+        <div class="proof-stat"><span class="proof-stat__value">~13</span><span class="proof-stat__label">Settimane per fase (circa)</span></div>
+        <div class="proof-stat"><span class="proof-stat__value">3</span><span class="proof-stat__label">Sedute a settimana</span></div>
+        <div class="proof-stat"><span class="proof-stat__value">60</span><span class="proof-stat__label">Minuti al massimo per seduta</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="landing-cta-final" aria-labelledby="cta-final-title">
+    <div class="wrap">
+      <h2 id="cta-final-title">Inizia dal Diario o dagli Allenamenti</h2>
+      <p>Due spazi separati, un percorso reale. Scegli da dove partire.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="diario/">Leggi il Diario</a>
+        <a class="btn btn-ghost" href="allenamenti/">Vai agli Allenamenti</a>
+      </div>
+    </div>
+  </section>
 </main>
-
-
-
 <footer class="site-footer">
-
-  <div class="wrap"><p><small>Nicola · 4 fasi · AB · AC · CB · parte alta ~70%</small></p></div>
-
+  <div class="wrap"><p>&copy; <span id="y"></span> Nicola &middot; Diario, allenamenti, sessioni e schede &middot; <a href="trasparenza-ai/">Trasparenza AI</a></p></div>
 </footer>
-
-<script src="js/main.js?v=2" defer></script>
-
-<script src="js/cookie-consent.js?v=2" defer></script>
-
-<script src="admin/js/dashboard.js?v=3" defer></script>
-
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+<script src="js/main.js?v=4" defer></script>
+<script src="js/cookie-consent.js?v=3" defer></script>
 </body>
-
 </html>
-

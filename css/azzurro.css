@@ -1,0 +1,64 @@
+/* Base blu azzurro: sfumature, puntinato e carta increspata sopra lo stile Forza Quotidiana.
+   Solo stile, nessun dato. */
+:root {
+  --bg: #2a5c98; --surface: #2f67a6; --surface-2: #3873b4;
+  --color-bg: #2a5c98; --color-surface: #2f67a6;
+  --text: #f6faff; --text-secondary: #e6f0fb; --text-body: #dce9f8; --muted: #d0e2f6;
+  --accent: #bfe0ff; --color-primary: #bfe0ff; --link-prose: #d9edff;
+  --cta-bg: #1c4673; --cta-hover: #163a60;
+  --line: rgba(236, 246, 255, .46); --line-soft: rgba(236, 246, 255, .24);
+  --panel-bg: linear-gradient(168deg, #3f78b6 0%, #2f639f 38%, #234d82 100%);
+  --hero-gradient: linear-gradient(to top, rgba(22,52,92,.97) 8%, rgba(24,58,100,.62) 48%, rgba(90,160,230,.16) 74%, rgba(22,52,92,.55) 100%);
+}
+html, body { background-color: #2a5c98; }
+body {
+  background-image:
+    radial-gradient(rgba(255,255,255,.10) 1.3px, transparent 1.5px),
+    radial-gradient(ellipse 120% 70% at 50% -8%, rgba(190,225,255,.42) 0%, transparent 60%),
+    radial-gradient(ellipse 90% 60% at 100% 100%, rgba(120,190,245,.22) 0%, transparent 65%),
+    linear-gradient(165deg, #4a8bcb 0%, #2f679f 48%, #1f4474 100%);
+  background-size: 20px 20px, 100% 100%, 100% 100%, 100% 100%;
+  background-attachment: fixed;
+}
+body::before {
+  content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background-image: url("../img/ui/carta-increspata.png"); background-size: 640px 640px;
+  mix-blend-mode: soft-light; opacity: .3;
+}
+body > * { position: relative; z-index: 1; }
+body.site-shell > .fq-overlay, body.site-shell > .fq-overlay-dim, body.site-shell > .fq-backbar { position: fixed; }
+.site-header { background-color: rgba(24, 58, 98, .9); }
+.site-footer { background-color: rgba(18, 46, 80, .85); border-top: 1px solid var(--line); }
+.landing-section-label, .tagline { color: #d4ebff; }
+.hero__ai-wrap { position: absolute; inset: 0; }
+
+.hero { min-height: min(100svh, 780px); }
+.hero__media { position: absolute; inset: 0; }
+.hero__media img { width: 100%; height: 100%; object-fit: cover; object-position: center 18%; }
+.hero-ai-mark{position:absolute;right:14px;top:88px;z-index:3;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:.2rem .55rem;border-radius:999px;background:rgba(14,40,72,.78);color:#e8f3ff;border:1px solid rgba(190,224,255,.5)}
+.hero-ai-note{margin:.6rem 0 0;font-size:.8rem;color:#e8f3ff}.hero-ai-note a{color:#fff}
+
+/* V3: spazio sotto l'header fisso e link leggibili su sfondo azzurro scuro */
+body.site-shell main#contenuto > section.section:first-child { padding-top: calc(5.5rem + env(safe-area-inset-top, 0px)); }
+body.site-shell main a:not([class]),
+body.site-shell .site-footer a,
+body.site-shell footer a { color: #bfe3ff; text-decoration: underline; text-underline-offset: 2px; }
+body.site-shell main a:not([class]):hover,
+body.site-shell footer a:hover { color: #ffffff; }
+body.site-shell main#contenuto > article.section:first-child,
+body.site-shell main#contenuto.section { padding-top: calc(5.5rem + env(safe-area-inset-top, 0px)); }
+body.site-shell main#contenuto > .session-hero:first-child { padding-top: calc(5.5rem + env(safe-area-inset-top, 0px)); }
+body.site-shell main .legal-doc, body.site-shell main .legal-doc p, body.site-shell main .legal-doc li, body.site-shell main .legal-doc h1, body.site-shell main .legal-doc h2 { color: #f2f8ff; }
+
+/* V4: tabelle progressione scorrevoli su mobile */
+.admin-progressione .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.admin-progressione table { min-width: 34rem; }
+
+/* leggibilita link (azzurro): specificita 0, ogni classe esistente prevale */
+@media screen {
+  :where(body.site-shell) a:where(:link, :visited) { color: #e6f3ff; text-underline-offset: 2px; }
+}
+
+/* Foto AI: tag in alto a destra, didascalia libera */
+.ai-photo-wrap{position:relative}
+.ai-photo-wrap .ai-photo-mark{top:.6rem;bottom:auto;right:.6rem;left:auto}
